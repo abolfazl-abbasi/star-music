@@ -36,7 +36,7 @@ const HomePage = () => {
               autoplay={true}
               grabCursor={true}
               modules={[EffectCards]}
-              className="w-5/6 !overflow-visible flex items-center justify-center h-64 sm:h-auto"
+              className="w-5/6 !overflow-visible flex items-center justify-center h-52 sm:h-auto"
               loop={true}
               cardsEffect={{
                 rotate: false,
