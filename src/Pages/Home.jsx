@@ -36,7 +36,7 @@ const HomePage = () => {
               autoplay={true}
               grabCursor={true}
               modules={[EffectCards]}
-              className="w-5/6 !overflow-visible flex items-center justify-center"
+              className="w-5/6 !overflow-visible flex items-center justify-center h-64 sm:h-auto"
               loop={true}
               cardsEffect={{
                 rotate: false,
@@ -142,56 +142,56 @@ const HomePage = () => {
             </select>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 my-4">
-            <div className="col-span-1 h-36 bg-red-300 rounded-xl overflow-hidden">
+            <div className="col-span-1 h-32 lg:h-36 bg-red-300 rounded-xl overflow-hidden">
               <img
                 className="w-full h-full"
                 src={require("./../assets/images/download (1) 2.jpg")}
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-36 bg-red-300 rounded-xl overflow-hidden">
+            <div className="col-span-1 h-32 lg:h-36 bg-red-300 rounded-xl overflow-hidden">
               <img
                 className="w-full h-full"
                 src={require("./../assets/images/download (1) 2.jpg")}
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-36 bg-red-300 rounded-xl overflow-hidden">
+            <div className="col-span-1 h-32 lg:h-36 bg-red-300 rounded-xl overflow-hidden">
               <img
                 className="w-full h-full"
                 src={require("./../assets/images/download (1) 2.jpg")}
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-36 bg-red-300 rounded-xl overflow-hidden">
+            <div className="col-span-1 h-32 lg:h-36 bg-red-300 rounded-xl overflow-hidden">
               <img
                 className="w-full h-full"
                 src={require("./../assets/images/download (1) 2.jpg")}
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-36 bg-red-300 rounded-xl overflow-hidden">
+            <div className="col-span-1 h-32 lg:h-36 bg-red-300 rounded-xl overflow-hidden">
               <img
                 className="w-full h-full"
                 src={require("./../assets/images/download (1) 2.jpg")}
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-36 bg-red-300 rounded-xl overflow-hidden">
+            <div className="col-span-1 h-32 lg:h-36 bg-red-300 rounded-xl overflow-hidden">
               <img
                 className="w-full h-full"
                 src={require("./../assets/images/download (1) 2.jpg")}
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-36 bg-red-300 rounded-xl overflow-hidden">
+            <div className="col-span-1 h-32 lg:h-36 bg-red-300 rounded-xl overflow-hidden">
               <img
                 className="w-full h-full"
                 src={require("./../assets/images/download (1) 2.jpg")}
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-36 bg-red-300 rounded-xl overflow-hidden">
+            <div className="col-span-1 h-32 lg:h-36 bg-red-300 rounded-xl overflow-hidden">
               <img
                 className="w-full h-full"
                 src={require("./../assets/images/download (1) 2.jpg")}
