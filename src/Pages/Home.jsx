@@ -37,6 +37,7 @@ const HomePage = () => {
               grabCursor={true}
               modules={[EffectCards]}
               className="w-5/6 !overflow-visible flex items-center justify-center h-52 sm:h-auto"
+              style={{ perspective: "1300px" }}
               loop={true}
               cardsEffect={{
                 rotate: false,
@@ -44,65 +45,65 @@ const HomePage = () => {
                 slideShadows: false,
               }}
             >
-              <SwiperSlide className="!rounded-3xl overflow-hidden">
+              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
                 <img
                   src={require("./../assets/images/download (1) 3.jpg")}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden">
+              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
                 <img
-                  src={require("./../assets/images/download (11) 2.jpg")}
+                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden">
+              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
                 <img
-                  src={require("./../assets/images/download (11) 2.jpg")}
+                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden">
+              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
                 <img
-                  src={require("./../assets/images/download (11) 2.jpg")}
+                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden">
+              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
                 <img
-                  src={require("./../assets/images/download (11) 2.jpg")}
+                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden">
+              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
                 <img
-                  src={require("./../assets/images/download (11) 2.jpg")}
+                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden">
+              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
                 <img
-                  src={require("./../assets/images/download (11) 2.jpg")}
+                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden">
+              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
                 <img
-                  src={require("./../assets/images/download (11) 2.jpg")}
+                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden">
+              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
                 <img
-                  src={require("./../assets/images/download (11) 2.jpg")}
+                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
                   alt=""
                   className="w-full h-full"
                 />
@@ -227,7 +228,7 @@ const HomePage = () => {
                   key={i}
                 >
                   {/* {console.log(i)} */}
-                  <div className="w-28 h-44 bg-stone-800 rounded-xl px-2 pt-2 pb-1 mr-4 md:w-32 md:h-48">
+                  <div className="w-28 h-44 bg-stone-800 rounded-xl px-2 pt-2 pb-1 mr-4 md:mr-8 md:w-40 md:h-56">
                     <div className="w-full h-2/3 ">
                       <img
                         className="w-full h-full rounded-xl"
@@ -235,7 +236,7 @@ const HomePage = () => {
                         alt=""
                       />
                     </div>
-                    <div className="text-xs text-stone-300 pt-1 w-full">
+                    <div className="text-xs text-stone-300 pt-1 w-full md:mt-2">
                       <div className="whitespace-nowrap text-ellipsis overflow-hidden w-full">
                         DO TA DEL ASHEGH
                       </div>
@@ -282,7 +283,7 @@ const HomePage = () => {
                   key={i}
                 >
                   {/* {console.log(i)} */}
-                  <div className="w-28 h-44 bg-stone-800 rounded-xl px-2 pt-2 pb-1 mr-4  md:w-32 md:h-48">
+                  <div className="w-28 h-44 bg-stone-800 rounded-xl px-2 pt-2 pb-1 mr-4 md:mr-8  md:w-40 md:h-56">
                     <div className="w-full h-2/3 ">
                       <img
                         className="w-full h-full rounded-xl"
@@ -290,7 +291,7 @@ const HomePage = () => {
                         alt=""
                       />
                     </div>
-                    <div className="text-xs text-stone-300 pt-1 w-full">
+                    <div className="text-xs text-stone-300 pt-1 w-full md:mt-2">
                       <div className="whitespace-nowrap text-ellipsis overflow-hidden w-full">
                         DO TA DEL ASHEGH
                       </div>
@@ -310,14 +311,14 @@ const HomePage = () => {
             </Swiper>
             <div>
               <div className="grid grid-cols-2 gap-3 my-4">
-                <div className="col-span-1 h-32 lg:h-40 xl:h-48 bg-red-300 rounded-xl overflow-hidden">
+                <div className="col-span-1 h-32 lg:h-40 xl:h-64 bg-red-300 rounded-xl overflow-hidden">
                   <img
                     className="w-full h-full"
                     src={require("./../assets/images/download (1) 2.jpg")}
                     alt=""
                   />
                 </div>
-                <div className="col-span-1 h-32 lg:h-40 xl:h-48 bg-red-300 rounded-xl overflow-hidden">
+                <div className="col-span-1 h-32 lg:h-40 xl:h-64 bg-red-300 rounded-xl overflow-hidden">
                   <img
                     className="w-full h-full"
                     src={require("./../assets/images/download (1) 2.jpg")}
@@ -355,8 +356,8 @@ const HomePage = () => {
                   key={i}
                 >
                   {/* {console.log(i)} */}
-                  <div className="flex flex-col justify-center items-center mr-4 w-20 h-36 md:w-24 md:h-40">
-                    <div className="bg-stone-800 rounded-full overflow-hidden w-20 h-20 md:w-24 md:h-24">
+                  <div className="flex flex-col justify-center items-center mr-4 md:mr-8 w-20 h-36 md:w-32 md:h-48">
+                    <div className="bg-stone-800 rounded-full overflow-hidden w-20 h-20 md:w-32 md:h-32">
                       <img
                         className="w-full h-full rounded-xl"
                         src={require("./../assets/images/download (15) 1.jpg")}
@@ -371,7 +372,6 @@ const HomePage = () => {
               ))}
             </Swiper>
           </div>
-          {/* jejuHallasan */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 my-4">
             <div className="col-span-1 h-24 lg:h-40 bg-red-300 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer">
               <span className="z-10 absolute p-3">NEW COMERS</span>
