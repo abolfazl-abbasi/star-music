@@ -38,6 +38,7 @@ const HomePage = () => {
               modules={[EffectCards]}
               className="w-5/6 !overflow-visible flex items-center justify-center h-52 sm:h-auto"
               loop={true}
+              style={{ perspective: "1300px" }}
               cardsEffect={{
                 rotate: false,
                 perspective: true,
