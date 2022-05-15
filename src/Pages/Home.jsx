@@ -37,7 +37,6 @@ const HomePage = () => {
               grabCursor={true}
               modules={[EffectCards]}
               className="w-5/6 !overflow-visible flex items-center justify-center h-52 sm:h-auto"
-              style={{ perspective: "1300px" }}
               loop={true}
               cardsEffect={{
                 rotate: false,
@@ -45,65 +44,65 @@ const HomePage = () => {
                 slideShadows: false,
               }}
             >
-              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
+              <SwiperSlide className="!rounded-3xl overflow-hidden">
                 <img
                   src={require("./../assets/images/download (1) 3.jpg")}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
+              <SwiperSlide className="!rounded-3xl overflow-hidden">
                 <img
-                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
+                  src={require("./../assets/images/download (11) 2.jpg")}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
+              <SwiperSlide className="!rounded-3xl overflow-hidden">
                 <img
-                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
+                  src={require("./../assets/images/download (11) 2.jpg")}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
+              <SwiperSlide className="!rounded-3xl overflow-hidden">
                 <img
-                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
+                  src={require("./../assets/images/download (11) 2.jpg")}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
+              <SwiperSlide className="!rounded-3xl overflow-hidden">
                 <img
-                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
+                  src={require("./../assets/images/download (11) 2.jpg")}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
+              <SwiperSlide className="!rounded-3xl overflow-hidden">
                 <img
-                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
+                  src={require("./../assets/images/download (11) 2.jpg")}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
+              <SwiperSlide className="!rounded-3xl overflow-hidden">
                 <img
-                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
+                  src={require("./../assets/images/download (11) 2.jpg")}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
+              <SwiperSlide className="!rounded-3xl overflow-hidden">
                 <img
-                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
+                  src={require("./../assets/images/download (11) 2.jpg")}
                   alt=""
                   className="w-full h-full"
                 />
               </SwiperSlide>
-              <SwiperSlide className="!rounded-3xl overflow-hidden w-[1275px] h-[570px]">
+              <SwiperSlide className="!rounded-3xl overflow-hidden">
                 <img
-                  src={"https://i.ytimg.com/vi/Rkep4Hrsieg/maxresdefault.jpg"}
+                  src={require("./../assets/images/download (11) 2.jpg")}
                   alt=""
                   className="w-full h-full"
                 />
@@ -120,7 +119,7 @@ const HomePage = () => {
               <HiSearch className="h-5 w-5 md:w-6 md:h-6 text-stone-200 dark:text-stone-400" />
             </div>
           </div>
-          <div className="items-center justify-center w-full rounded-md grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div className="items-center justify-center w-full rounded-md grid grid-cols-2 sm:grid-cols-4 gap-2 md:my-2 md:mb-6">
             <select className="form-select rounded-lg bg-stone-800 text-stone-200 dark:text-stone-500 text-xs lg:text-base py-2 px-2 col-span-1">
               <option value="" className="" key="">
                 song style
@@ -228,7 +227,7 @@ const HomePage = () => {
                   key={i}
                 >
                   {/* {console.log(i)} */}
-                  <div className="w-28 h-44 bg-stone-800 rounded-xl px-2 pt-2 pb-1 mr-4 md:mr-8 md:w-40 md:h-56">
+                  <div className="w-28 h-44 bg-stone-800 rounded-xl px-2 pt-2 pb-1 mr-4 md:mr-6 md:w-40 md:h-56">
                     <div className="w-full h-2/3 ">
                       <img
                         className="w-full h-full rounded-xl"
@@ -283,7 +282,7 @@ const HomePage = () => {
                   key={i}
                 >
                   {/* {console.log(i)} */}
-                  <div className="w-28 h-44 bg-stone-800 rounded-xl px-2 pt-2 pb-1 mr-4 md:mr-8  md:w-40 md:h-56">
+                  <div className="w-28 h-44 bg-stone-800 rounded-xl px-2 pt-2 pb-1 mr-4 md:mr-6  md:w-40 md:h-56">
                     <div className="w-full h-2/3 ">
                       <img
                         className="w-full h-full rounded-xl"
@@ -356,7 +355,7 @@ const HomePage = () => {
                   key={i}
                 >
                   {/* {console.log(i)} */}
-                  <div className="flex flex-col justify-center items-center mr-4 md:mr-8 w-20 h-36 md:w-32 md:h-48">
+                  <div className="flex flex-col justify-center items-center mr-4 md:mr-6 w-20 h-36 md:w-32 md:h-48">
                     <div className="bg-stone-800 rounded-full overflow-hidden w-20 h-20 md:w-32 md:h-32">
                       <img
                         className="w-full h-full rounded-xl"
@@ -444,7 +443,7 @@ const HomePage = () => {
           <div className="p-4 rounded-lg dark:text-stone-400">
             LOGO AND NAME
           </div>
-          <div className="flex justify-between w-full">
+          <div className="flex justify-between w-full lg:justify-around">
             <div className="mx-2">
               <h3 className="font-bold mb-1 font-[cursive] dark:text-stone-400">
                 Help
