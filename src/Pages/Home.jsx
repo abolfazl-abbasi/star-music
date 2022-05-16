@@ -66,7 +66,7 @@ const HomePage = () => {
               }}
             >
               <SwiperSlide className="!rounded-3xl overflow-hidden border-2 border-black w-full max-h-[500px] relative sliderSlide">
-                <div className="sliderInfo p-2 py-5 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
+                <div className="sliderInfo p-2 py-7 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
                   <h2 className="text-sm w-1/3 lg:w-1/4 sm:text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                     IN ESHGHE
                   </h2>
@@ -92,7 +92,7 @@ const HomePage = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="!rounded-3xl overflow-hidden border-2 border-black w-full max-h-[500px] relative sliderSlide">
-                <div className="sliderInfo p-2 py-5 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
+                <div className="sliderInfo p-2 py-7 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
                   <h2 className="text-sm w-1/3 lg:w-1/4 sm:text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                     IN ESHGHE
                   </h2>
@@ -118,7 +118,7 @@ const HomePage = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="!rounded-3xl overflow-hidden border-2 border-black w-full max-h-[500px] relative sliderSlide">
-                <div className="sliderInfo p-2 py-5 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
+                <div className="sliderInfo p-2 py-7 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
                   <h2 className="text-sm w-1/3 lg:w-1/4 sm:text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                     IN ESHGHE
                   </h2>
@@ -144,7 +144,7 @@ const HomePage = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="!rounded-3xl overflow-hidden border-2 border-black w-full max-h-[500px] relative sliderSlide">
-                <div className="sliderInfo p-2 py-5 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
+                <div className="sliderInfo p-2 py-7 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
                   <h2 className="text-sm w-1/3 lg:w-1/4 sm:text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                     IN ESHGHE
                   </h2>
@@ -170,7 +170,7 @@ const HomePage = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="!rounded-3xl overflow-hidden border-2 border-black w-full max-h-[500px] relative sliderSlide">
-                <div className="sliderInfo p-2 py-5 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
+                <div className="sliderInfo p-2 py-7 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
                   <h2 className="text-sm w-1/3 lg:w-1/4 sm:text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                     IN ESHGHE
                   </h2>
@@ -196,7 +196,7 @@ const HomePage = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="!rounded-3xl overflow-hidden border-2 border-black w-full max-h-[500px] relative sliderSlide">
-                <div className="sliderInfo p-2 py-5 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
+                <div className="sliderInfo p-2 py-7 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
                   <h2 className="text-sm w-1/3 lg:w-1/4 sm:text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                     IN ESHGHE
                   </h2>
@@ -222,7 +222,7 @@ const HomePage = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="!rounded-3xl overflow-hidden border-2 border-black w-full max-h-[500px] relative sliderSlide">
-                <div className="sliderInfo p-2 py-5 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
+                <div className="sliderInfo p-2 py-7 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
                   <h2 className="text-sm w-1/3 lg:w-1/4 sm:text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                     IN ESHGHE
                   </h2>
@@ -248,7 +248,7 @@ const HomePage = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="!rounded-3xl overflow-hidden border-2 border-black w-full max-h-[500px] relative sliderSlide">
-                <div className="sliderInfo p-2 py-5 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
+                <div className="sliderInfo p-2 py-7 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
                   <h2 className="text-sm w-1/3 lg:w-1/4 sm:text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                     IN ESHGHE
                   </h2>
@@ -274,7 +274,7 @@ const HomePage = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="!rounded-3xl overflow-hidden border-2 border-black w-full max-h-[500px] relative sliderSlide">
-                <div className="sliderInfo p-2 py-5 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
+                <div className="sliderInfo p-2 py-7 sm:p-3 sm:py-8 lg:p-5 lg:py-10 xl:py-16 xl:p-8">
                   <h2 className="text-sm w-1/3 lg:w-1/4 sm:text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                     IN ESHGHE
                   </h2>
@@ -305,10 +305,10 @@ const HomePage = () => {
             <div className="w-full flex items-center justify-center">
               <input
                 type="search"
-                className="w-2/3 md:w-1/2 pl-4 xl:pl-6 h-8 md:h-12 xl:h-16 rounded-xl hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-4 focus:ring-offset-4 dark:focus:ring-offset-stone-900 focus:ring-offset-[#c5c4c4]  bg-stone-800 placeholder:text-xs md:placeholder:text-base xl:placeholder:text-lg placeholder:text-stone-300 dark:placeholder:text-stone-500 text-white"
+                className="relative left-5 md:left-6 lg:left-7 xl:left-8 w-2/3 md:w-1/2 pl-4 xl:pl-6 h-8 md:h-12 xl:h-16 rounded-xl hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-4 focus:ring-offset-4 dark:focus:ring-offset-stone-900 focus:ring-offset-[#c5c4c4]  bg-stone-800 placeholder:text-xs md:placeholder:text-base xl:placeholder:text-lg placeholder:text-stone-300 dark:placeholder:text-stone-500 text-white"
                 placeholder="artists , songs , playlist , . . ."
               />
-              <button className="rounded-xl flex items-center justify-center h-8 md:h-12 xl:h-16 px-3 xl:px-5 relative right-10 md:right-12 lg:right-14 xl:right-16">
+              <button className="rounded-xl flex items-center justify-center h-8 md:h-12 xl:h-16 px-3 xl:px-5 relative right-5 md:right-6 lg:right-7 xl:right-8">
                 <HiOutlineMicrophone className="h-5 w-5 md:w-6 md:h-6 text-stone-200 dark:text-stone-400" />
               </button>
             </div>
@@ -316,22 +316,22 @@ const HomePage = () => {
               <HiFilter className="w-8 h-8 md:h-12 md:w-12 dark:fill-stone-500" />
             </div>
             <div className="items-center justify-center w-full rounded-md grid grid-cols-2 sm:grid-cols-4 gap-2 md:mb-6">
-              <select className="form-select rounded-lg bg-stone-800 text-stone-200 dark:text-stone-500 md:p-4 text-xs md:text-base lg:text-base p-2 col-span-1 border-2 dark:border-stone-700 hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-900">
+              <select className="form-select rounded-lg bg-stone-800 appearance-none text-stone-200 dark:text-stone-500 md:p-4 text-xs md:text-base lg:text-base p-2 col-span-1 border-2 dark:border-stone-700 hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-900">
                 <option value="" className="" key="">
                   song style
                 </option>
               </select>
-              <select className="form-select rounded-lg bg-stone-800 text-stone-200 dark:text-stone-500 md:p-4 text-xs md:text-base lg:text-base p-2 col-span-1 border-2 dark:border-stone-700 hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-900">
+              <select className="form-select rounded-lg bg-stone-800 appearance-none text-stone-200 dark:text-stone-500 md:p-4 text-xs md:text-base lg:text-base p-2 col-span-1 border-2 dark:border-stone-700 hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-900">
                 <option value="" className="" key="">
                   song style
                 </option>
               </select>
-              <select className="form-select rounded-lg bg-stone-800 text-stone-200 dark:text-stone-500 md:p-4 text-xs md:text-base lg:text-base p-2 col-span-1 border-2 dark:border-stone-700 hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-900">
+              <select className="form-select rounded-lg bg-stone-800 appearance-none text-stone-200 dark:text-stone-500 md:p-4 text-xs md:text-base lg:text-base p-2 col-span-1 border-2 dark:border-stone-700 hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-900">
                 <option value="" className="" key="">
                   song style
                 </option>
               </select>
-              <select className="form-select rounded-lg bg-stone-800 text-stone-200 dark:text-stone-500 md:p-4 text-xs md:text-base lg:text-base p-2 col-span-1 border-2 dark:border-stone-700 hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-900">
+              <select className="form-select rounded-lg bg-stone-800 appearance-none text-stone-200 dark:text-stone-500 md:p-4 text-xs md:text-base lg:text-base p-2 col-span-1 border-2 dark:border-stone-700 hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-2 focus:ring-offset-2 focus:ring-offset-stone-900">
                 <option value="" className="" key="">
                   song style
                 </option>
@@ -339,7 +339,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 my-4 md:my-6">
-            <div className="col-span-1 h-32 lg:h-48 bg-red-300 rounded-xl overflow-hidden relative posterBody">
+            <div className="col-span-1 h-32 lg:h-48 bg-black/70 rounded-xl overflow-hidden relative posterBody">
               <div className="trackPoster absolute p-5 text-center">
                 <h2 className="text-sm sm:text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                   IN ESHGHE
@@ -364,7 +364,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-32 lg:h-48 bg-red-300 rounded-xl overflow-hidden relative posterBody">
+            <div className="col-span-1 h-32 lg:h-48 bg-black/70 rounded-xl overflow-hidden relative posterBody">
               <div className="trackPoster absolute p-5 text-center">
                 <h2 className="text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                   IN ESHGHE
@@ -387,7 +387,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-32 lg:h-48 bg-red-300 rounded-xl overflow-hidden relative posterBody">
+            <div className="col-span-1 h-32 lg:h-48 bg-black/70 rounded-xl overflow-hidden relative posterBody">
               <div className="trackPoster absolute p-5 text-center">
                 <h2 className="text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                   IN ESHGHE
@@ -410,7 +410,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-32 lg:h-48 bg-red-300 rounded-xl overflow-hidden relative posterBody">
+            <div className="col-span-1 h-32 lg:h-48 bg-black/70 rounded-xl overflow-hidden relative posterBody">
               <div className="trackPoster absolute p-5 text-center">
                 <h2 className="text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                   IN ESHGHE
@@ -433,7 +433,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-32 lg:h-48 bg-red-300 rounded-xl overflow-hidden relative posterBody">
+            <div className="col-span-1 h-32 lg:h-48 bg-black/70 rounded-xl overflow-hidden relative posterBody">
               <div className="trackPoster absolute p-5 text-center">
                 <h2 className="text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                   IN ESHGHE
@@ -456,7 +456,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-32 lg:h-48 bg-red-300 rounded-xl overflow-hidden relative posterBody">
+            <div className="col-span-1 h-32 lg:h-48 bg-black/70 rounded-xl overflow-hidden relative posterBody">
               <div className="trackPoster absolute p-5 text-center">
                 <h2 className="text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                   IN ESHGHE
@@ -479,7 +479,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-32 lg:h-48 bg-red-300 rounded-xl overflow-hidden relative posterBody">
+            <div className="col-span-1 h-32 lg:h-48 bg-black/70 rounded-xl overflow-hidden relative posterBody">
               <div className="trackPoster absolute p-5 text-center">
                 <h2 className="text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                   IN ESHGHE
@@ -502,7 +502,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-32 lg:h-48 bg-red-300 rounded-xl overflow-hidden relative posterBody">
+            <div className="col-span-1 h-32 lg:h-48 bg-black/70 rounded-xl overflow-hidden relative posterBody">
               <div className="trackPoster absolute p-5 text-center">
                 <h2 className="text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                   IN ESHGHE
@@ -564,14 +564,14 @@ const HomePage = () => {
                         alt=""
                       />
                     </div>
-                    <div className="text-xs text-stone-300 pt-1 w-full md:mt-2">
+                    <div className="text-[10px] sm:text-xs text-stone-300 pt-1 w-full md:mt-2">
                       <div className="whitespace-nowrap text-ellipsis overflow-hidden w-full">
                         DO TA DEL ASHEGH
                       </div>
-                      <div className="text-stone-500">
+                      <div className="text-stone-500 text-[10px] sm:text-xs">
                         <span>BEHNAM BANI</span>
                         <div className="my-1">
-                          <div className="flex items-center space-x-1 justify-end mx-1">
+                          <div className="flex items-center space-x-1 text-[10px] sm:text-xs justify-end mx-1">
                             <HiEye />
                             <span>200000</span>
                           </div>
@@ -620,14 +620,14 @@ const HomePage = () => {
                         alt=""
                       />
                     </div>
-                    <div className="text-xs text-stone-300 pt-1 w-full md:mt-2">
+                    <div className="text-[10px] sm:text-xs text-stone-300 pt-1 w-full md:mt-2">
                       <div className="whitespace-nowrap text-ellipsis overflow-hidden w-full">
                         DO TA DEL ASHEGH
                       </div>
-                      <div className="text-stone-500">
+                      <div className="text-stone-500 text-[10px] sm:text-xs">
                         <span>BEHNAM BANI</span>
                         <div className="my-1">
-                          <div className="flex items-center space-x-1 justify-end mx-1">
+                          <div className="flex items-center space-x-1 text-[10px] sm:text-xs justify-end mx-1">
                             <HiEye />
                             <span>200000</span>
                           </div>
@@ -640,7 +640,7 @@ const HomePage = () => {
             </Swiper>
             <div>
               <div className="grid grid-cols-2 gap-3 my-4">
-                <div className="col-span-1 h-32 lg:h-52 xl:h-80 bg-red-300 rounded-xl overflow-hidden relative posterBody">
+                <div className="col-span-1 h-32 lg:h-52 xl:h-80 bg-black/70 rounded-xl overflow-hidden relative posterBody">
                   <div className="trackPoster absolute p-5 text-center">
                     <h2 className="text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                       IN ESHGHE
@@ -664,7 +664,7 @@ const HomePage = () => {
                     alt=""
                   />
                 </div>
-                <div className="col-span-1 h-32 lg:h-52 xl:h-80 bg-red-300 rounded-xl overflow-hidden relative posterBody">
+                <div className="col-span-1 h-32 lg:h-52 xl:h-80 bg-black/70 rounded-xl overflow-hidden relative posterBody">
                   <div className="trackPoster absolute p-5 text-center">
                     <h2 className="text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                       IN ESHGHE
@@ -743,7 +743,7 @@ const HomePage = () => {
             </Swiper>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 my-4">
-            <div className="col-span-1 h-24 lg:h-40 bg-red-300 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
+            <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
               <span className="z-10 absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
@@ -751,7 +751,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-24 lg:h-40 bg-red-300 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
+            <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
               <span className="z-10 absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
@@ -759,7 +759,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-24 lg:h-40 bg-red-300 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
+            <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
               <span className="z-10 absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
@@ -767,7 +767,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-24 lg:h-40 bg-red-300 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
+            <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
               <span className="z-10 absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
@@ -775,7 +775,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-24 lg:h-40 bg-red-300 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
+            <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
               <span className="z-10 absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
@@ -783,7 +783,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-24 lg:h-40 bg-red-300 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
+            <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
               <span className="z-10 absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
@@ -791,7 +791,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-24 lg:h-40 bg-red-300 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
+            <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
               <span className="z-10 absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
@@ -799,7 +799,7 @@ const HomePage = () => {
                 alt=""
               />
             </div>
-            <div className="col-span-1 h-24 lg:h-40 bg-red-300 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
+            <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
               <span className="z-10 absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
