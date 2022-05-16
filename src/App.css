@@ -85,10 +85,39 @@ code {
   font: bold;
 }
 
+.artistInfo * {
+  transition: 300ms;
+}
+
 .artistInfo:hover .headphone {
   opacity: 100%;
 }
 
+.artistInfo:hover .artistName {
+  transform: translate(0, 5px);
+}
+
 .swiper-wrapper {
   padding: 12px 0 0 8px;
+}
+
+.trackPoster {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: rgb(213, 213, 213);
+  bottom: 0%;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.posterBody:hover .trackPoster,
+.posterBody:focus .trackPoster {
+  opacity: 100%;
 }
