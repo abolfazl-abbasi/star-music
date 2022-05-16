@@ -503,6 +503,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   background: #b30000;
 }
 
+input[type="text"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="text"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
 * {
   outline: 0;
 }
@@ -557,6 +576,7 @@ code {
 .categoryMusic:hover span {
   -webkit-transform: rotate(-4deg);
           transform: rotate(-4deg);
+  /* mix-blend-mode: ; */
   font: bold;
 }
 

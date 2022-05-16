@@ -305,7 +305,7 @@ const HomePage = () => {
             <div className="w-full flex items-center justify-center">
               <input
                 type="search"
-                className="relative left-5 md:left-6 lg:left-7 xl:left-8 w-2/3 md:w-1/2 pl-4 xl:pl-6 h-8 md:h-12 xl:h-16 rounded-xl hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-4 focus:ring-offset-4 dark:focus:ring-offset-stone-900 focus:ring-offset-[#c5c4c4]  bg-stone-800 placeholder:text-xs md:placeholder:text-base xl:placeholder:text-lg placeholder:text-stone-300 dark:placeholder:text-stone-500 text-white"
+                className="relative left-5 md:left-6 lg:left-7 xl:left-8 w-2/3 md:w-1/2 pl-4 xl:pl-6 h-8 md:h-12 xl:h-16 rounded-xl hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-4 focus:ring-offset-4 dark:focus:ring-offset-stone-900 bg-stone-800 placeholder:text-xs md:placeholder:text-base xl:placeholder:text-lg placeholder:text-stone-300 dark:placeholder:text-stone-500 text-white"
                 placeholder="artists , songs , playlist , . . ."
               />
               <button className="rounded-xl flex items-center justify-center h-8 md:h-12 xl:h-16 px-3 xl:px-5 relative right-5 md:right-6 lg:right-7 xl:right-8">
@@ -341,17 +341,15 @@ const HomePage = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 my-4 md:my-6">
             <div className="col-span-1 h-32 lg:h-48 bg-black/70 rounded-xl overflow-hidden relative posterBody">
               <div className="trackPoster absolute p-5 text-center">
-                <h2 className="text-sm sm:text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
+                <h2 className="text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                   IN ESHGHE
                 </h2>
-                <h3 className="text-[10px] sm:text-sm xl:text-lg font-[itim]">
-                  BEHNAM BANI
-                </h3>
+                <h3 className="text-sm xl:text-lg font-[itim]">BEHNAM BANI</h3>
                 <div className="xl:space-y-2">
-                  <div className="text-[10px] sm:text-sm xl:text-lg font-[itim]">
+                  <div className="text-sm xl:text-lg font-[itim]">
                     Publish : 2022 / 3 / 12
                   </div>
-                  <div className="text-[8px] inline-flex items-center space-x-1 sm:space-x-2 sm:text-sm md:text-base lg:text-lg my-1 font-[itim]">
+                  <div className="inline-flex items-center space-x-1 sm:space-x-2 text-sm md:text-base lg:text-lg my-1 font-[itim]">
                     <HiEye />
                     <div>2100000</div>
                   </div>
