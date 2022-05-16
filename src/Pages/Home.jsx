@@ -305,7 +305,7 @@ const HomePage = () => {
             <div className="w-full flex items-center justify-center">
               <input
                 type="search"
-                className="w-1/2 pl-4 xl:pl-6 h-8 md:h-12 xl:h-16 rounded-xl hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-4 focus:ring-offset-4 dark:focus:ring-offset-stone-900 focus:ring-offset-[#c5c4c4]  bg-stone-800 placeholder:text-xs md:placeholder:text-base xl:placeholder:text-lg placeholder:text-stone-300 dark:placeholder:text-stone-500 text-white"
+                className="w-2/3 md:w-1/2 pl-4 xl:pl-6 h-8 md:h-12 xl:h-16 rounded-xl hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-4 focus:ring-offset-4 dark:focus:ring-offset-stone-900 focus:ring-offset-[#c5c4c4]  bg-stone-800 placeholder:text-xs md:placeholder:text-base xl:placeholder:text-lg placeholder:text-stone-300 dark:placeholder:text-stone-500 text-white"
                 placeholder="artists , songs , playlist , . . ."
               />
               <button className="rounded-xl flex items-center justify-center h-8 md:h-12 xl:h-16 px-3 xl:px-5 relative right-10 md:right-12 lg:right-14 xl:right-16">
@@ -640,7 +640,7 @@ const HomePage = () => {
             </Swiper>
             <div>
               <div className="grid grid-cols-2 gap-3 my-4">
-                <div className="col-span-1 h-32 lg:h-48 xl:h-72 bg-red-300 rounded-xl overflow-hidden relative posterBody">
+                <div className="col-span-1 h-32 lg:h-52 xl:h-80 bg-red-300 rounded-xl overflow-hidden relative posterBody">
                   <div className="trackPoster absolute p-5 text-center">
                     <h2 className="text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                       IN ESHGHE
@@ -664,7 +664,7 @@ const HomePage = () => {
                     alt=""
                   />
                 </div>
-                <div className="col-span-1 h-32 lg:h-48 xl:h-72 bg-red-300 rounded-xl overflow-hidden relative posterBody">
+                <div className="col-span-1 h-32 lg:h-52 xl:h-80 bg-red-300 rounded-xl overflow-hidden relative posterBody">
                   <div className="trackPoster absolute p-5 text-center">
                     <h2 className="text-xl font-bold xl:text-4xl md:mb-1 xl:mb-2 font-[itim]">
                       IN ESHGHE
