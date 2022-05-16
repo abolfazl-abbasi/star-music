@@ -7,6 +7,32 @@
   src: url(./assets/Fonts/JejuHallasan-Regular.ttf);
 }
 
+@font-face {
+  font-family: itim;
+  src: url(./assets/Fonts/Itim-Regular.ttf);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(216, 0, 0);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
 * {
   outline: 0;
 }
@@ -24,4 +50,45 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.swiper-pagination-bullet {
+  @apply md:!h-4 md:!w-4;
+}
+
+.sliderInfo {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background: rgba(256, 256, 256, 0.5);
+  bottom: -60%;
+  clip-path: polygon(0 0, 100% 90%, 100% 100%, 0% 100%);
+  transition: 0.5s;
+}
+
+.sliderSlide:hover .sliderInfo,
+.sliderSlide:focus .sliderInfo {
+  bottom: 0;
+}
+
+.categoryMusic * {
+  transition: 0.3s;
+}
+
+.categoryMusic:hover img {
+  filter: blur(8px);
+}
+
+.categoryMusic:hover span {
+  transform: rotate(-4deg);
+  mix-blend-mode: color-burn;
+  font: bold;
+}
+
+.artistInfo:hover .headphone {
+  opacity: 100%;
+}
+
+.swiper-wrapper {
+  padding: 12px 0 0 8px;
 }
