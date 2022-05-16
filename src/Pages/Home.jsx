@@ -744,7 +744,7 @@ const HomePage = () => {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 my-4">
             <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
-              <span className="z-10 absolute p-3">NEW COMERS</span>
+              <span className="z-[999] absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
                 className="w-full h-full"
@@ -752,7 +752,7 @@ const HomePage = () => {
               />
             </div>
             <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
-              <span className="z-10 absolute p-3">NEW COMERS</span>
+              <span className="z-[999] absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
                 className="w-full h-full"
@@ -760,7 +760,7 @@ const HomePage = () => {
               />
             </div>
             <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
-              <span className="z-10 absolute p-3">NEW COMERS</span>
+              <span className="z-[999] absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
                 className="w-full h-full"
@@ -768,7 +768,7 @@ const HomePage = () => {
               />
             </div>
             <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
-              <span className="z-10 absolute p-3">NEW COMERS</span>
+              <span className="z-[999] absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
                 className="w-full h-full"
@@ -776,7 +776,7 @@ const HomePage = () => {
               />
             </div>
             <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
-              <span className="z-10 absolute p-3">NEW COMERS</span>
+              <span className="z-[999] absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
                 className="w-full h-full"
@@ -784,7 +784,7 @@ const HomePage = () => {
               />
             </div>
             <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
-              <span className="z-10 absolute p-3">NEW COMERS</span>
+              <span className="z-[999] absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
                 className="w-full h-full"
@@ -792,7 +792,7 @@ const HomePage = () => {
               />
             </div>
             <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
-              <span className="z-10 absolute p-3">NEW COMERS</span>
+              <span className="z-[999] absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
                 className="w-full h-full"
@@ -800,7 +800,7 @@ const HomePage = () => {
               />
             </div>
             <div className="col-span-1 h-24 lg:h-40 bg-black/70 rounded-2xl overflow-hidden relative font-[jejuHallasan] flex items-center justify-center text-2xl lg:text-4xl text-center cursor-pointer categoryMusic">
-              <span className="z-10 absolute p-3">NEW COMERS</span>
+              <span className="z-[999] absolute p-3">NEW COMERS</span>
               <img
                 src={require("./../assets/images/blueewa 2.jpg")}
                 className="w-full h-full"
