@@ -591,6 +591,12 @@ code {
   justify-content: center;
   transition: 0.5s;
   opacity: 0;
+  z-index: 999;
+}
+
+.posterBody:hover img {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 
 .posterBody:hover .trackPoster,
