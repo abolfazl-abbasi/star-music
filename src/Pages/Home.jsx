@@ -153,7 +153,7 @@ const HomePage = () => {
                     <input
                       type="search"
                       className="relative pb-1 left-6 lg:left-0 w-full pl-4 xl:pl-6 h-10 rounded-xl hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-4 focus:ring-offset-4 dark:focus:ring-offset-stone-900 bg-stone-800 placeholder:text-xs md:placeholder placeholder:text-stone-300 dark:placeholder:text-stone-500 text-white"
-                      placeholder="artists , songs , playlist , . . ."
+                      placeholder="artists , songs , . . ."
                     />
                     <button className="rounded-xl flex items-center justify-center h-8 md:h-12 xl:h-16 px-3 xl:px-5 relative right-7 lg:right-12 xl:right-16">
                       <HiOutlineMicrophone className="h-6 w-6 text-stone-200 dark:text-stone-400" />
