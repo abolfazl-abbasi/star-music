@@ -143,3 +143,31 @@ code {
 .posterBody:focus .trackPoster {
   opacity: 100%;
 }
+
+.clipRect {
+  clip: rect(0, 250px, 125px, 0);
+}
+
+.rangeInput {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 6px; /* Specified height */
+  background: #939393; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+  border-radius: 6px;
+}
+
+/* The rangeInput handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.rangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 16px; /* Set a specific slider handle width */
+  height: 16px; /* Slider handle height */
+  border-radius: 16px;
+  background: #ffffff; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
