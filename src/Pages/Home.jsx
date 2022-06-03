@@ -135,7 +135,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-5 lg:col-span-4 p-3 px-6 mb-32">
+        <div className="col-span-5 lg:col-span-4 lg:!p-3 lg:!px-6 p-2 mb-32">
           <div className="lg:grid grid-cols-12 items-center">
             <div className="lg:col-span-6">
               <div className="flex lg:block items-center justify-between">
