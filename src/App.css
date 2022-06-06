@@ -61,7 +61,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #c5c4c4;
+  background: linear-gradient(180deg, #000000e7, #080808);
 }
 
 code {
@@ -123,7 +123,7 @@ code {
   height: 100%;
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
-  color: rgb(213, 213, 213);
+  color: rgb(255, 255, 255);
   bottom: 0%;
   transition: 0.5s;
   display: flex;
@@ -152,22 +152,80 @@ code {
   -webkit-appearance: none; /* Override default CSS styles */
   appearance: none;
   width: 100%; /* Full-width */
-  height: 6px; /* Specified height */
-  background: #939393; /* Grey background */
+  height: 4px; /* Specified height */
+  background: linear-gradient(
+    90deg,
+    #ffffff 50%,
+    #484848 50%
+  ); /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
   transition: opacity 0.2s;
   border-radius: 6px;
+  font: red;
 }
 
 /* The rangeInput handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .rangeInput::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 16px; /* Set a specific slider handle width */
-  height: 16px; /* Slider handle height */
+  width: 4px; /* Set a specific slider handle width */
+  height: 4px; /* Slider handle height */
   border-radius: 16px;
   background: #ffffff; /* Green background */
   cursor: pointer; /* Cursor on hover */
+  transition: all 0.1s;
+}
+
+.rangeInput:hover::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+}
+
+.rangeInput::-moz-range-progress {
+  background-color: red;
+}
+.songCart:hover img {
+  transition: all 0.3s;
+  @apply blur-sm;
+}
+
+.songCart .cartPlay {
+  transition: 0.3s;
+  background-color: #00000080;
+}
+
+.songCart .cartPlay svg {
+  transition: all 0.3s;
+  transform: translate(0, 100px);
+}
+
+.songCart:hover .cartPlay svg {
+  transform: translate(0, 0);
+  transition: all 0.3s;
+}
+
+.sectionTitle {
+  overflow: hidden;
+}
+
+.sectionTitle:hover .sectionTitleText {
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+.sectionTitle:hover .sectionTitleText {
+  color: #b30000;
+  transform: scale(1.1);
+}
+
+.sectionTitle img {
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+.sectionTitle:hover img {
+  transition: 0.3s;
+  transform: scale(1.1);
 }
