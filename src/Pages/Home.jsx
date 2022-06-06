@@ -111,7 +111,7 @@ const HomePage = () => {
                     alt=""
                     className="h-full rounded-full"
                   />
-                  <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                  <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300 text-left">
                     ABOL
                   </button>
                 </div>
@@ -121,7 +121,7 @@ const HomePage = () => {
                     alt=""
                     className="h-full rounded-full"
                   />
-                  <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                  <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300 text-left">
                     ALI
                   </button>
                 </div>
@@ -131,14 +131,14 @@ const HomePage = () => {
                     alt=""
                     className="h-full rounded-full"
                   />
-                  <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                  <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300 text-left">
                     AMIR
                   </button>
                 </div>
                 <hr className="mx-1 bg-black" />
                 <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3 hover:bg-stone-500">
                   <HiPlus className="w-8 h-8 ml-1 text-stone-300" />
-                  <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                  <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300 text-left">
                     Add
                   </button>
                 </div>
@@ -220,7 +220,7 @@ const HomePage = () => {
                         alt=""
                         className="h-full rounded-full"
                       />
-                      <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                      <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300 text-left">
                         ABOL
                       </button>
                     </div>
@@ -230,7 +230,7 @@ const HomePage = () => {
                         alt=""
                         className="h-full rounded-full"
                       />
-                      <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                      <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300 text-left">
                         ALI
                       </button>
                     </div>
@@ -240,14 +240,14 @@ const HomePage = () => {
                         alt=""
                         className="h-full rounded-full"
                       />
-                      <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                      <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300 text-left">
                         AMIR
                       </button>
                     </div>
                     <hr className="mx-1 bg-black" />
                     <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3 hover:bg-stone-500">
                       <HiPlus className="w-8 h-8 ml-1 text-stone-300" />
-                      <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                      <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300 text-left">
                         Add
                       </button>
                     </div>
@@ -503,7 +503,7 @@ const HomePage = () => {
                   alt=""
                   className="h-full rounded-full"
                 />
-                <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300 text-left">
                   ABOL
                 </button>
               </div>
@@ -513,7 +513,7 @@ const HomePage = () => {
                   alt=""
                   className="h-full rounded-full"
                 />
-                <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300 text-left">
                   ALI
                 </button>
               </div>
@@ -523,14 +523,14 @@ const HomePage = () => {
                   alt=""
                   className="h-full rounded-full"
                 />
-                <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300 text-left">
                   AMIR
                 </button>
               </div>
               <hr className="mx-1 bg-black" />
               <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3 hover:bg-stone-500">
                 <HiPlus className="w-8 h-8 ml-1 text-stone-300" />
-                <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300 text-left">
                   Add
                 </button>
               </div>
