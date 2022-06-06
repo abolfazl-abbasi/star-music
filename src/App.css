@@ -193,7 +193,7 @@ code {
 
 .songCart .cartPlay {
   transition: 0.3s;
-  background-color: #00000080;
+  background-color: #0000003b;
 }
 
 .songCart .cartPlay svg {
