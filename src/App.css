@@ -12,25 +12,33 @@
   src: url(./assets/Fonts/Itim-Regular.ttf);
 }
 
+@keyframes like {
+  0% {
+    transform: scale(1.1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  65% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 12px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 5px;
+  background: #1e1e1e;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(216, 0, 0);
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background: #000000;
 }
 
 input[type="text"]::-ms-clear {
@@ -186,6 +194,7 @@ code {
 .rangeInput::-moz-range-progress {
   background-color: red;
 }
+
 .songCart:hover img {
   transition: all 0.3s;
   @apply blur-sm;
@@ -206,16 +215,33 @@ code {
   transition: all 0.3s;
 }
 
+.singerCart:focus img {
+  transition: all 0.3s;
+  @apply blur-sm;
+}
+
+.singerCart .cartLike {
+  transition: 0.3s;
+  background-color: #0000003b;
+}
+
+.singerCart .cartLike svg {
+  transition: all 0.3s;
+  opacity: 0%;
+}
+
+.singerCart:focus .cartLike svg {
+  transition: all 0.3s;
+  opacity: 100%;
+  animation: like 1s ease-in-out;
+}
+
 .sectionTitle {
   overflow: hidden;
 }
 
 .sectionTitle .sectionTitleText {
   transition: 0.3s;
-}
-
-.sectionTitle:hover .sectionTitleText {
-  /* color: black; */
 }
 
 .sectionTitle img {

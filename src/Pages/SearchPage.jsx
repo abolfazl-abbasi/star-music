@@ -3,12 +3,10 @@ import {
   HiChevronDown,
   HiClock,
   HiCog,
-  HiEye,
   HiHeart,
   HiHome,
   HiLibrary,
   HiOutlineBookOpen,
-  HiOutlineChevronRight,
   HiOutlineClock,
   HiOutlineMicrophone,
   HiOutlineStar,
@@ -38,7 +36,7 @@ import { Link } from "react-router-dom";
 // import required modules
 // import { EffectCards } from "swiper";
 
-const HomePage = () => {
+const SearchPage = () => {
   // const range = _.range(0, 50);
 
   // const songTimeInput = document.getElementById("songTimeInput");
@@ -86,8 +84,8 @@ const HomePage = () => {
   return (
     <>
       <div className="grid grid-cols-6">
-        <div className="w-full bg-black py-8 px-2 transition-all hidden lg:!block lg:!col-span-1 h-screen">
-          <div className="h-fit">
+        <div className="w-full bg-black py-8 px-2 transition-all hidden lg:!block lg:!col-span-1 h-auto">
+          <div className="h-fit sticky top-7">
             <div className="mb-3 ml-3 relative">
               <div
                 className="w-28 h-8 rounded-full overflow-hidden bg-stone-600 p-1 flex items-center space-x-3 hover:bg-stone-500 accountsBtn"
@@ -158,7 +156,7 @@ const HomePage = () => {
                 <div className="text">Home</div>
               </Link>
               <Link
-                to={"/search"}
+                to={"/"}
                 className="flex items-center px-1 py-2 rounded-2xl my-1 mx-2 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100"
               >
                 <HiSearch className="w-5 h-5 ml-2 mr-2" />
@@ -172,7 +170,7 @@ const HomePage = () => {
                 <div className="text">Library</div>
               </Link>
               <Link
-                to={"/lastPlayed"}
+                to={"/"}
                 className="flex items-center px-1 py-2 rounded-2xl my-1 mx-2 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100"
               >
                 <HiClock className="w-5 h-5 ml-2 mr-2" />
@@ -217,9 +215,9 @@ const HomePage = () => {
           </div>
         </div>
         <div className="col-span-6 lg:col-span-5 lg:!p-3 lg:!px-6 p-2 mb-32">
-          <div className="lg:grid grid-cols-12 items-center my-2">
+          <div className="lg:!hidden grid-cols-12 items-center my-2">
             <div className="lg:col-span-6 pb-0">
-              <div className="grid grid-cols-12 lg:block items-center justify-between mb-5 lg:!mb-0">
+              <div className="grid grid-cols-12 lg:block items-center justify-between mb-5 lg:!mb-0 ">
                 <div className="w-fit px-2 lg:hidden col-span-1">
                   <div className="w-10 h-10 rounded-full overflow-hidden">
                     <img
@@ -297,100 +295,51 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex items-baseline justify-evenly px-6 lg:!pr-1 lg:!pl-10 lg:col-span-5 lg:col-start-8 lg:justify-between text-sm">
-              <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 !bg-blue-800 text-white rounded-md flex items-center justify-center shadow-[0_0_12px_blue]">
-                Playlist
-              </button>
-              <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
-                Artists
-              </button>
-              <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
-                Podcasts
-              </button>
-              <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
-                Albums
-              </button>
+          </div>
+          <div className="lg:!grid hidden grid-cols-12 items-center my-2">
+            <div className="lg:col-start-4 col-end-11 pb-0">
+              <div className="grid grid-cols-12 lg:block items-center justify-between mb-5 lg:!mb-0 ">
+                <div className="w-full col-span-10">
+                  <div className="w-full flex items-center relative pl-6 pr-2 lg:!p-0">
+                    <input
+                      type="search"
+                      className="relative pb-1 w-full pl-4 xl:pl-6 h-11 rounded-xl hover:bg-stone-800/70 focus:ring-stone-800 focus:ring-4 focus:ring-offset-4 dark:focus:ring-offset-stone-900 bg-stone-800 placeholder:text-xs md:placeholder placeholder:text-stone-300 dark:placeholder:text-stone-500 text-white"
+                      placeholder="artists , songs , . . ."
+                    />
+                    <button className="rounded-xl flex items-center justify-center h-8 md:h-12 xl:h-16 px-3 xl:px-5 absolute right-2 lg:!-right-2">
+                      <HiOutlineMicrophone className="h-6 w-6 text-stone-200 dark:text-stone-400" />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="space-y-2">
-            <div>
-              <div>
-                <div className="flex items-center justify-between p-2">
-                  <h2 className="text-stone-400 text-xl">Recently Played</h2>
-                  <div className="flex items-center text-stone-500 hover:text-blue-700 hover:translate-x-1 transition-all cursor-pointer">
-                    <button>show more</button>{" "}
-                    <span className="pt-1">
-                      <HiOutlineChevronRight />
-                    </span>
-                  </div>
+          <div className="w-full grid grid-cols-3 sm:!grid-cols-4 md:!grid-cols-5 gap-3 lg:!gap-4 mt-8">
+            {_.range(0, 6).map((x) => (
+              <>
+                <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#cf2929]">
+                  Pop
                 </div>
-              </div>
-              <div className="grid grid-cols-2 lg:!grid-cols-3 w-full gap-2 md:!gap-3 px-2 py-1">
-                {_.range(0, 3).map((id) => (
-                  <button
-                    className="col-span-1 bg-black h-20 rounded-lg lg:!rounded-none p-2 lg:!p-0 flex items-center sm:!h-24 md:!h-28 cursor-pointer sectionTitle"
-                    key={id}
-                  >
-                    <img
-                      src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb4e9a052f23cffd91e9838755/1/en/default"
-                      className="w-2/5 h-full rounded-lg lg:!rounded-none"
-                      alt=""
-                    />
-                    <div className="w-3/5 items-center justify-center p-2">
-                      <div className="text-stone-300 text-sm text-center md:!text-base sectionTitleText">
-                        Black Home - DEP
-                      </div>
-                    </div>
-                  </button>
-                ))}
-              </div>
-            </div>
-            <div>
-              <div>
-                <div className="flex items-center justify-between p-2">
-                  <h2 className="text-stone-400 text-xl">Recently Played</h2>
-                  <div className="flex items-center text-stone-500 hover:text-blue-700 hover:translate-x-1 transition-all cursor-pointer">
-                    <button>show more</button>{" "}
-                    <span className="pt-1">
-                      <HiOutlineChevronRight />
-                    </span>
-                  </div>
+                <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#2ab02a]">
+                  Rock
                 </div>
-              </div>
-              <div className="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-8 w-full gap-4 md:gap-5 px-2 py-1">
-                {_.range(0, 8).map((id) => (
-                  <button
-                    className="h-40 sm:!h-44 bg-[#181818] rounded-lg px-2 pt-2 pb-1 md:h-52 hover:bg-[#272727] transition-all duration-300 cursor-pointer songCart text-left lg:!text-center"
-                    key={id}
-                  >
-                    <div className="w-full h-3/5 rounded-lg overflow-hidden shadow-[0_0_12px_#000000] relative">
-                      <img
-                        className="w-full h-full"
-                        src={require("./../assets/images/Rectangle 64 (1).jpg")}
-                        alt=""
-                      />
-                      <div className="absolute w-full h-full flex items-center justify-center top-0 cartPlay">
-                        <GoPlay className="w-10 h-10 text-green-600 cartSongPlay" />
-                      </div>
-                    </div>
-                    <div className="text-[10px] text-stone-100 pt-1 w-full md:mt-2">
-                      <div className="whitespace-nowrap text-ellipsis overflow-hidden w-full">
-                        DO TA DEL ASHEGH
-                      </div>
-                      <div className="text-stone-400 text-[10px]">
-                        <span>BEHNAM BANI</span>
-                        <div className="my-1">
-                          <div className="flex items-center space-x-1 text-[10px] justify-end mx-1">
-                            <HiEye />
-                            <span>200000</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </button>
-                ))}
-              </div>
-            </div>
+                <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#2898c9]">
+                  TV
+                </div>
+                <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#6816d3]">
+                  Discover
+                </div>
+                <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#000000]">
+                  HipHop
+                </div>
+                <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#4b0b8f]">
+                  Jazz
+                </div>
+                <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#afc10e]">
+                  Mod
+                </div>
+              </>
+            ))}
           </div>
         </div>
       </div>
@@ -565,7 +514,7 @@ const HomePage = () => {
               <div className="text">Home</div>
             </Link>
             <Link
-              to={"/search"}
+              to={"/"}
               className="flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100"
             >
               <HiSearch className="w-5 h-5 ml-2 mr-2" />
@@ -579,7 +528,7 @@ const HomePage = () => {
               <div className="text">Library</div>
             </Link>
             <Link
-              to={"/lastPlayed"}
+              to={"/"}
               className="flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100"
             >
               <HiClock className="w-5 h-5 ml-2 mr-2" />
@@ -631,4 +580,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default SearchPage;
