@@ -65,13 +65,33 @@ const HomePage = () => {
     input.style.background = `linear-gradient(90deg, #ffffff ${input.value}%, #484848 ${input.value}%)`;
   };
 
+  const handleShowAccounts = (e, x) => {
+    const accounts = document.getElementsByClassName("accounts")[x];
+    const accountsBg = document.getElementsByClassName("accountsBg")[x];
+
+    if (e === "open") {
+      accounts.style.display = "block ";
+      accountsBg.style.display = "block ";
+    }
+
+    if (e === "close") {
+      accounts.style.display = "none ";
+      accountsBg.style.display = "none ";
+    }
+
+    // console.log(accounts.style.display, accountsBg.style.display);
+  };
+
   return (
     <>
       <div className="grid grid-cols-6">
         <div className="w-full bg-black py-8 px-2 transition-all hidden lg:!block lg:!col-span-1 h-screen">
           <div className=" h-fit">
-            <div className="mb-3 ml-3">
-              <div className="w-28 h-8 rounded-full overflow-hidden bg-stone-600 p-1 flex items-center space-x-3 hover:bg-stone-500">
+            <div className="mb-3 ml-3 relative">
+              <div
+                className="w-28 h-8 rounded-full overflow-hidden bg-stone-600 p-1 flex items-center space-x-3 hover:bg-stone-500 accountsBtn"
+                onClick={() => handleShowAccounts("open", 0)}
+              >
                 <img
                   src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
                   alt=""
@@ -84,6 +104,49 @@ const HomePage = () => {
                   <HiChevronDown className="w-5 h-5 mt-[2px] text-stone-200" />
                 </div>
               </div>
+              <div className="absolute w-28 h-fit top-10 bg-stone-600 rounded-xl z-50 overflow-hidden accounts hidden">
+                <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3  hover:bg-stone-500">
+                  <img
+                    src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+                    alt=""
+                    className="h-full rounded-full"
+                  />
+                  <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                    ABOL
+                  </button>
+                </div>
+                <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3  hover:bg-stone-500">
+                  <img
+                    src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+                    alt=""
+                    className="h-full rounded-full"
+                  />
+                  <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                    ALI
+                  </button>
+                </div>
+                <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3  hover:bg-stone-500">
+                  <img
+                    src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+                    alt=""
+                    className="h-full rounded-full"
+                  />
+                  <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                    AMIR
+                  </button>
+                </div>
+                <hr className="mx-1 bg-black" />
+                <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3 hover:bg-stone-500">
+                  <HiPlus className="w-8 h-8 ml-1 text-stone-300" />
+                  <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                    Add
+                  </button>
+                </div>
+              </div>
+              <div
+                className="absolute w-screen h-screen top-[-16px] -left-8 z-40 accountsBg hidden"
+                onClick={() => handleShowAccounts("close", 0)}
+              ></div>
             </div>
             <div>
               <div className="flex items-center px-1 py-2 rounded-2xl my-1 mx-2 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100">
@@ -147,8 +210,52 @@ const HomePage = () => {
                       src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
                       alt=""
                       className="w-full"
+                      onClick={() => handleShowAccounts("open", 1)}
                     />
                   </div>
+                  <div className="absolute w-28 h-fit top-[67px] bg-stone-600 rounded-xl z-50 overflow-hidden accounts hidden">
+                    <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3  hover:bg-stone-500">
+                      <img
+                        src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+                        alt=""
+                        className="h-full rounded-full"
+                      />
+                      <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                        ABOL
+                      </button>
+                    </div>
+                    <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3  hover:bg-stone-500">
+                      <img
+                        src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+                        alt=""
+                        className="h-full rounded-full"
+                      />
+                      <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                        ALI
+                      </button>
+                    </div>
+                    <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3  hover:bg-stone-500">
+                      <img
+                        src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+                        alt=""
+                        className="h-full rounded-full"
+                      />
+                      <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                        AMIR
+                      </button>
+                    </div>
+                    <hr className="mx-1 bg-black" />
+                    <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3 hover:bg-stone-500">
+                      <HiPlus className="w-8 h-8 ml-1 text-stone-300" />
+                      <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    className="absolute w-screen h-screen top-[-16px] -left-8 z-40 accountsBg hidden"
+                    onClick={() => handleShowAccounts("close", 1)}
+                  ></div>
                 </div>
                 <div className="w-full col-span-10">
                   <div className="w-full flex items-center relative pl-6 pr-2 lg:!p-0">
@@ -175,18 +282,18 @@ const HomePage = () => {
               </div>
             </div>
             <div className="w-full flex items-baseline justify-evenly px-6 lg:!pr-1 lg:!pl-10 lg:col-span-5 lg:col-start-8 lg:justify-between text-sm">
-              <div className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 !bg-blue-800 text-white rounded-md flex items-center justify-center shadow-[0_0_12px_blue]">
+              <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 !bg-blue-800 text-white rounded-md flex items-center justify-center shadow-[0_0_12px_blue]">
                 Playlist
-              </div>
-              <div className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
+              </button>
+              <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
                 Artists
-              </div>
-              <div className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
+              </button>
+              <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
                 Podcasts
-              </div>
-              <div className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
+              </button>
+              <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
                 Albums
-              </div>
+              </button>
             </div>
           </div>
           <div className="space-y-2">
@@ -195,7 +302,7 @@ const HomePage = () => {
                 <div className="flex items-center justify-between p-2">
                   <h2 className="text-stone-400 text-xl">Recently Played</h2>
                   <div className="flex items-center text-stone-500 hover:text-blue-700 hover:translate-x-1 transition-all cursor-pointer">
-                    <span>show more</span>{" "}
+                    <button>show more</button>{" "}
                     <span className="pt-1">
                       <HiOutlineChevronRight />
                     </span>
@@ -204,7 +311,7 @@ const HomePage = () => {
               </div>
               <div className="grid grid-cols-2 lg:!grid-cols-3 w-full gap-2 md:!gap-3 px-2 py-1">
                 {_.range(0, 3).map((id) => (
-                  <div
+                  <button
                     className="col-span-1 bg-black h-20 rounded-lg lg:!rounded-none p-2 lg:!p-0 flex items-center sm:!h-24 md:!h-28 cursor-pointer sectionTitle"
                     key={id}
                   >
@@ -218,7 +325,7 @@ const HomePage = () => {
                         Black Home - DEP
                       </div>
                     </div>
-                  </div>
+                  </button>
                 ))}
               </div>
             </div>
@@ -227,7 +334,7 @@ const HomePage = () => {
                 <div className="flex items-center justify-between p-2">
                   <h2 className="text-stone-400 text-xl">Recently Played</h2>
                   <div className="flex items-center text-stone-500 hover:text-blue-700 hover:translate-x-1 transition-all cursor-pointer">
-                    <span>show more</span>{" "}
+                    <button>show more</button>{" "}
                     <span className="pt-1">
                       <HiOutlineChevronRight />
                     </span>
@@ -236,8 +343,8 @@ const HomePage = () => {
               </div>
               <div className="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-8 w-full gap-4 md:gap-5 px-2 py-1">
                 {_.range(0, 8).map((id) => (
-                  <div
-                    className="h-40 sm:!h-44 bg-[#181818] rounded-lg px-2 pt-2 pb-1 md:h-52 hover:bg-[#272727] transition-all duration-300 cursor-pointer songCart"
+                  <button
+                    className="h-40 sm:!h-44 bg-[#181818] rounded-lg px-2 pt-2 pb-1 md:h-52 hover:bg-[#272727] transition-all duration-300 cursor-pointer songCart text-left lg:!text-center"
                     key={id}
                   >
                     <div className="w-full h-3/5 rounded-lg overflow-hidden shadow-[0_0_12px_#000000] relative">
@@ -264,7 +371,7 @@ const HomePage = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </button>
                 ))}
               </div>
             </div>
@@ -295,7 +402,7 @@ const HomePage = () => {
             <FaRandom className="w-5 h-5 hover:text-blue-500 text-stone-400 cursor-pointer" />
             <div className="flex space-x-4 items-center px-4">
               <IoIosSkipBackward className="w-7 h-7 text-stone-300 cursor-pointer hover:-translate-x-1 hover:text-white transition-all" />
-              <GoPlay className="w-10 h-10 text-stone-300 cursor-pointer hover:-rotate-[90deg] hover:text-green-500 transition-all" />
+              <GoPlay className="w-10 h-10 text-stone-300 cursor-pointer hover:-rotate-[90deg] transition-all" />
               <IoIosSkipForward className="w-7 h-7 text-stone-300 cursor-pointer hover:translate-x-1 hover:text-white transition-all" />
             </div>
             <FaRetweet className="w-5 h-5 hover:text-blue-500 text-stone-400 cursor-pointer" />
@@ -372,8 +479,11 @@ const HomePage = () => {
           className="col-span-7 sm:!col-span-4 md:!col-span-3 h-full bg-stone-900 p-2 px-4 relative right-full transition-all"
           id="menu"
         >
-          <div className="mb-3 ml-3">
-            <div className="w-28 h-8 rounded-full overflow-hidden bg-stone-600 p-1 flex items-center space-x-3 hover:bg-stone-500">
+          <div className="mb-3 ml-3 relative">
+            <div
+              className="w-28 h-8 rounded-full overflow-hidden bg-stone-600 p-1 flex items-center space-x-3 hover:bg-stone-500 accountsBtn"
+              onClick={() => handleShowAccounts("open", 2)}
+            >
               <img
                 src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
                 alt=""
@@ -386,6 +496,49 @@ const HomePage = () => {
                 <HiChevronDown className="w-5 h-5 mt-[2px] text-stone-200" />
               </div>
             </div>
+            <div className="absolute w-28 h-fit top-10 bg-stone-600 rounded-xl z-50 overflow-hidden accounts hidden">
+              <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3  hover:bg-stone-500">
+                <img
+                  src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+                  alt=""
+                  className="h-full rounded-full"
+                />
+                <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                  ABOL
+                </button>
+              </div>
+              <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3  hover:bg-stone-500">
+                <img
+                  src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+                  alt=""
+                  className="h-full rounded-full"
+                />
+                <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                  ALI
+                </button>
+              </div>
+              <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3  hover:bg-stone-500">
+                <img
+                  src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
+                  alt=""
+                  className="h-full rounded-full"
+                />
+                <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                  AMIR
+                </button>
+              </div>
+              <hr className="mx-1 bg-black" />
+              <div className="w-full h-8 overflow-hidden p-1 flex items-center space-x-3 hover:bg-stone-500">
+                <HiPlus className="w-8 h-8 ml-1 text-stone-300" />
+                <button className="text-ellipsis overflow-hidden w-full text-xs text-stone-300">
+                  Add
+                </button>
+              </div>
+            </div>
+            <div
+              className="absolute w-screen h-screen top-[-16px] -left-8 z-40 accountsBg hidden"
+              onClick={() => handleShowAccounts("close", 2)}
+            ></div>
           </div>
           <div>
             <div className="flex items-center px-1 py-2 rounded-2xl my-1 mx-2 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100">
@@ -409,7 +562,7 @@ const HomePage = () => {
               <div className="text">Setting</div>
             </div>
           </div>
-          <hr className="text-stone-300 m-4 " />
+          <hr className="text-stone-300 m-4" />
           <div>
             <div className="">
               <div className="px-4">

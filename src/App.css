@@ -210,14 +210,12 @@ code {
   overflow: hidden;
 }
 
-.sectionTitle:hover .sectionTitleText {
+.sectionTitle .sectionTitleText {
   transition: 0.3s;
-  transform: scale(1);
 }
 
 .sectionTitle:hover .sectionTitleText {
-  color: #b30000;
-  transform: scale(1.1);
+  /* color: black; */
 }
 
 .sectionTitle img {
@@ -228,4 +226,9 @@ code {
 .sectionTitle:hover img {
   transition: 0.3s;
   transform: scale(1.1);
+}
+
+.sectionTitle:hover {
+  transition: 0.3s;
+  background-color: #b30000;
 }
