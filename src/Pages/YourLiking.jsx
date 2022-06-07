@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  HiEye,
-  HiHeart,
-  HiOutlineChevronRight,
-  HiOutlineHeart,
-  HiPlus,
-} from "react-icons/hi";
-import { GoPlay } from "react-icons/go";
+import { HiHeart } from "react-icons/hi";
 import "./../App.css";
 import _ from "lodash";
 
@@ -25,7 +18,7 @@ const YourLiking = () => {
             Album
           </th>
           <th className="w-[20%] text-sm md:text-base whitespace-nowrap">
-            Data Added
+            Date
           </th>
           <th className="w-[10%] text-sm md:text-base whitespace-nowrap hidden sm:table-cell">
             Time
