@@ -12,10 +12,11 @@ import {
   // HiSearch,
 } from "react-icons/hi";
 import "./../App.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import AccountsBar from "../Components/AccountsBar";
 
 const NavbarMob = () => {
+  const loc = useLocation();
   const handleMenu = (close) => {
     const menuBg = document.getElementById("menuBackground");
     const menu = document.getElementById("menu");
@@ -85,35 +86,45 @@ const NavbarMob = () => {
           <div>
             <Link
               to={"/"}
-              className="flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100"
+              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+                loc.pathname === "/" ? "!text-white" : ""
+              }`}
             >
               <HiHome className="w-5 h-5 ml-2 mr-2" />
               <div className="text">Home</div>
             </Link>
             <Link
               to={"/search"}
-              className="flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100"
+              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+                loc.pathname === "/search" ? "!text-white" : ""
+              }`}
             >
               <HiSearch className="w-5 h-5 ml-2 mr-2" />
               <div className="text">Search</div>
             </Link>
             <Link
               to={"/library"}
-              className="flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100"
+              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+                loc.pathname === "/library" ? "!text-white" : ""
+              }`}
             >
               <HiLibrary className="w-5 h-5 ml-2 mr-2" />
               <div className="text">Library</div>
             </Link>
             <Link
               to={"/lastPlayed"}
-              className="flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100"
+              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+                loc.pathname === "/lastPlayed" ? "!text-white" : ""
+              }`}
             >
               <HiClock className="w-5 h-5 ml-2 mr-2" />
               <div className="text">Last Played</div>
             </Link>
             <Link
-              to={"/"}
-              className="flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100"
+              to={"/setting"}
+              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+                loc.pathname === "/setting" ? "!text-white" : ""
+              }`}
             >
               <HiCog className="w-5 h-5 ml-2 mr-2" />
               <div className="text">Setting</div>
@@ -127,24 +138,39 @@ const NavbarMob = () => {
               </div>
             </div>
             <div>
-              <div className="flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer mt-1 text-stone-400 hover:bg-stone-700 hover:text-stone-100">
+              <Link
+                to={"/yourMarks"}
+                className={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer mt-1 text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+                  loc.pathname === "/yourMarks" ? "!text-white" : ""
+                }`}
+              >
                 <div className="w-8 h-8 rounded-xl bg-purple-800 text-white ml-2 mr-3 flex items-center justify-center">
                   <HiStar className="w-5 h-5" />
                 </div>
                 <div>your marks</div>
-              </div>
-              <div className="flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100">
+              </Link>
+              <Link
+                to={"/yourLiking"}
+                className={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+                  loc.pathname === "/yourLiking" ? "!text-white" : ""
+                }`}
+              >
                 <div className="w-8 h-8 rounded-xl bg-red-800 text-white ml-2 mr-3 flex items-center justify-center">
                   <HiHeart className="w-5 h-5" />
                 </div>
                 <div>your liking</div>
-              </div>
-              <div className="flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100">
+              </Link>
+              <Link
+                to={"/addPlaylist"}
+                className={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+                  loc.pathname === "/addPlaylist" ? "!text-white" : ""
+                }`}
+              >
                 <div className="w-8 h-8 rounded-xl bg-cyan-800 text-white ml-2 mr-3 flex items-center justify-center">
                   <HiPlus className="w-5 h-5" />
                 </div>
                 <div>add playlist</div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

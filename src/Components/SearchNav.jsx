@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  HiOutlineMicrophone,
-  // HiSearch,
-} from "react-icons/hi";
+import { HiOutlineMicrophone } from "react-icons/hi";
 import "./../App.css";
 import AccountsBar from "../Components/AccountsBar";
 

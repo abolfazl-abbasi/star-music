@@ -6,7 +6,7 @@ import {
 import "./../App.css";
 import AccountsBar from "../Components/AccountsBar";
 
-const MainNav = () => {
+const MainNav = ({ component }) => {
   const handleMenu = (close) => {
     const menuBg = document.getElementById("menuBackground");
     const menu = document.getElementById("menu");
@@ -82,7 +82,11 @@ const MainNav = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex items-baseline justify-evenly px-6 lg:!pr-1 lg:!pl-10 lg:col-span-5 lg:col-start-8 lg:justify-between text-sm">
+        <div
+          className={`w-full flex items-baseline justify-evenly px-6 lg:!pr-1 lg:!pl-10 lg:col-span-5 lg:col-start-8 lg:justify-between text-sm ${
+            component === "home" ? "" : "!hidden"
+          }`}
+        >
           <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 !bg-blue-800 text-white rounded-md flex items-center justify-center shadow-[0_0_12px_blue]">
             Playlist
           </button>
