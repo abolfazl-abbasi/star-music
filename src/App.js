@@ -1,4 +1,5 @@
 import { Route } from "react-router-dom";
+import MainLayout from "./Layouts/MainLayout";
 import HomePage from "./Pages/Home";
 import LastPlayed from "./Pages/LastPlayed";
 import LibraryPage from "./Pages/Library";
@@ -8,16 +9,24 @@ function App() {
   return (
     <>
       <Route path={"/"} exact>
-        <HomePage />
+        <MainLayout>
+          <HomePage />
+        </MainLayout>
       </Route>
       <Route path={"/library"}>
-        <LibraryPage />
+        <MainLayout>
+          <LibraryPage />
+        </MainLayout>
       </Route>
       <Route path={"/search"}>
-        <SearchPage />
+        <MainLayout component="search">
+          <SearchPage />
+        </MainLayout>
       </Route>
       <Route path={"/lastPlayed"}>
-        <LastPlayed />
+        <MainLayout>
+          <LastPlayed />
+        </MainLayout>
       </Route>
     </>
   );
