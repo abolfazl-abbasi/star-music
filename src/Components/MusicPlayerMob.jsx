@@ -34,7 +34,7 @@ const MusicPlayerMob = () => {
               <div>1:12 / 3:28</div>
             </div>
           </div>
-          <div className="flex items-center space-x-5 pr-3 pb-1">
+          <div className="flex items-center space-x-5 pr-3">
             <FaRandom className="w-6 h-6 text-stone-400" />
             <FaPlay className="w-8 h-8 text-stone-300" />
           </div>

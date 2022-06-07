@@ -6,7 +6,7 @@ import {
 import "./../App.css";
 import AccountsBar from "../Components/AccountsBar";
 
-const MainNav = () => {
+const SearchNav = () => {
   const handleMenu = (close) => {
     const menuBg = document.getElementById("menuBackground");
     const menu = document.getElementById("menu");
@@ -42,7 +42,7 @@ const MainNav = () => {
 
   return (
     <>
-      <div className="lg:grid grid-cols-12 items-center my-2">
+      <div className="grid-cols-12 items-center my-2 lg:!hidden">
         <div className="lg:col-span-6 pb-0">
           <div className="grid grid-cols-12 lg:block items-center justify-between mb-5 lg:!mb-0">
             <div className="w-10 h-10 rounded-full overflow-hidden lg:!hidden">
@@ -82,23 +82,9 @@ const MainNav = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex items-baseline justify-evenly px-6 lg:!pr-1 lg:!pl-10 lg:col-span-5 lg:col-start-8 lg:justify-between text-sm">
-          <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 !bg-blue-800 text-white rounded-md flex items-center justify-center shadow-[0_0_12px_blue]">
-            Playlist
-          </button>
-          <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
-            Artists
-          </button>
-          <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
-            Podcasts
-          </button>
-          <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-9 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
-            Albums
-          </button>
-        </div>
       </div>
     </>
   );
 };
 
-export default MainNav;
+export default SearchNav;

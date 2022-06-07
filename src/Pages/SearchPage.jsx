@@ -29,39 +29,39 @@ const SearchPage = () => {
         {_.range(0, 6).map((x) => (
           <>
             <Tilt>
-              <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#cf2929] cursor-pointer">
+              <button className="w-full col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#cf2929] cursor-pointer">
                 Pop
-              </div>
+              </button>
             </Tilt>
             <Tilt>
-              <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#2ab02a] cursor-pointer">
+              <button className="w-full col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#2ab02a] cursor-pointer">
                 Rock
-              </div>
+              </button>
             </Tilt>
             <Tilt>
-              <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#2898c9] cursor-pointer">
+              <button className="w-full col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#2898c9] cursor-pointer">
                 TV
-              </div>
+              </button>
             </Tilt>
             <Tilt>
-              <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#6816d3] cursor-pointer">
+              <button className="w-full col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#6816d3] cursor-pointer">
                 Discover
-              </div>
+              </button>
             </Tilt>
             <Tilt>
-              <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#000000] cursor-pointer">
+              <button className="w-full col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#000000] cursor-pointer">
                 HipHop
-              </div>
+              </button>
             </Tilt>
             <Tilt>
-              <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#4b0b8f] cursor-pointer">
+              <button className="w-full col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#4b0b8f] cursor-pointer">
                 Jazz
-              </div>
+              </button>
             </Tilt>
             <Tilt>
-              <div className="col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#afc10e] cursor-pointer">
+              <button className="w-full col-span-1 h-20 sm:!h-24 md:!h-28 rounded flex items-center justify-center text-lg font-semibold text-white shadow-[0_0_12px_#0f0f0f] bg-[#afc10e] cursor-pointer">
                 Mod
-              </div>
+              </button>
             </Tilt>
           </>
         ))}

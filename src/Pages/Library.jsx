@@ -73,7 +73,7 @@ const LibraryPage = () => {
         <div className="grid grid-cols-3 sm:grid-cols-4 md:!grid-cols-5 xl:!grid-cols-6 w-full gap-4 md:gap-5 px-2 py-1">
           {_.range(0, 6).map((id) => (
             <button
-              className="h-40 sm:!h-44 bg-[#050505] rounded-lg px-2 pb-1 md:!h-56 xl:!h-64 hover:bg-[#0a0a0ad4] transition-all duration-300 cursor-pointer singerCart text-left lg:!text-center shadow-[0_0_12px_#0f0f0f]"
+              className="h-40 sm:!h-44 bg-[#050505] rounded-lg px-2 py-2 sm:!py-0 md:!h-56 xl:!h-64 hover:bg-[#0a0a0ad4] transition-all duration-300 cursor-pointer singerCart text-left lg:!text-center shadow-[0_0_12px_#0f0f0f]"
               key={id}
             >
               <div className="w-full h-2/3 rounded-full overflow-hidden relative">
