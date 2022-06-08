@@ -86,7 +86,7 @@ const NavbarMob = () => {
           <div>
             <Link
               to={"/"}
-              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                 loc.pathname === "/" ? "!text-white" : ""
               }`}
             >
@@ -95,7 +95,7 @@ const NavbarMob = () => {
             </Link>
             <Link
               to={"/search"}
-              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                 loc.pathname === "/search" ? "!text-white" : ""
               }`}
             >
@@ -104,7 +104,7 @@ const NavbarMob = () => {
             </Link>
             <Link
               to={"/library"}
-              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                 loc.pathname === "/library" ? "!text-white" : ""
               }`}
             >
@@ -113,7 +113,7 @@ const NavbarMob = () => {
             </Link>
             <Link
               to={"/lastPlayed"}
-              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                 loc.pathname === "/lastPlayed" ? "!text-white" : ""
               }`}
             >
@@ -122,7 +122,7 @@ const NavbarMob = () => {
             </Link>
             <Link
               to={"/setting"}
-              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                 loc.pathname === "/setting" ? "!text-white" : ""
               }`}
             >
@@ -134,13 +134,13 @@ const NavbarMob = () => {
           <div>
             <div className="">
               <div className="px-2">
-                <div className="text-xl text-stone-400">Playlist</div>
+                <div className="text-xl text-stone-300">Playlist</div>
               </div>
             </div>
             <div>
               <Link
                 to={"/yourMarks"}
-                className={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer mt-1 text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+                className={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer mt-1 text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                   loc.pathname === "/yourMarks" ? "!text-white" : ""
                 }`}
               >
@@ -151,7 +151,7 @@ const NavbarMob = () => {
               </Link>
               <Link
                 to={"/yourLiking"}
-                className={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+                className={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                   loc.pathname === "/yourLiking" ? "!text-white" : ""
                 }`}
               >
@@ -162,7 +162,7 @@ const NavbarMob = () => {
               </Link>
               <Link
                 to={"/addPlaylist"}
-                className={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer text-stone-400 hover:bg-stone-700 hover:text-stone-100 ${
+                className={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                   loc.pathname === "/addPlaylist" ? "!text-white" : ""
                 }`}
               >
