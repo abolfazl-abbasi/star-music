@@ -2,7 +2,7 @@ const Poster = ({ id, col }) => {
   return (
     <>
       <button
-        className={`col-span-1 lg:!col-span-${col} bg-black h-20 rounded-lg lg:!rounded-none p-2 lg:!p-0 flex items-center sm:!h-28 md:!h-36 cursor-pointer sectionTitle`}
+        className={`col-span-1 lg:!col-span-${col} bg-black h-20 rounded-lg lg:!rounded-none p-2 lg:!p-0 flex items-center sm:!h-28 md:!h-44 cursor-pointer sectionTitle`}
         key={id}
       >
         <img

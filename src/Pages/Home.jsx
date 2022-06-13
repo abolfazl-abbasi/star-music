@@ -39,8 +39,8 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-9 w-full gap-4 md:gap-5 px-2 py-1">
-            {_.range(0, 9).map((id) => (
+          <div className="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-10 w-full gap-4 md:gap-5 px-2 py-1">
+            {_.range(0, 10).map((id) => (
               <MusicCard id={id} />
             ))}
           </div>
@@ -57,8 +57,8 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-9 w-full gap-4 md:gap-5 px-2 py-1">
-            {_.range(0, 9).map((id) => (
+          <div className="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-10 w-full gap-4 md:gap-5 px-2 py-1">
+            {_.range(0, 10).map((id) => (
               <MusicCard id={id} />
             ))}
           </div>
