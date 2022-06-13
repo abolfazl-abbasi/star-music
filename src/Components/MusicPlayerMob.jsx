@@ -14,7 +14,7 @@ const MusicPlayerMob = () => {
 
   return (
     <>
-      <div className="fixed bottom-16 lg:bottom-0 w-full h-17 bg-[#171717] flex flex-col justify-between items-center lg:!hidden">
+      <div className="fixed bottom-16 lg:bottom-0 w-full h-17 bg-[#171717] flex flex-col justify-between items-center lg:!hidden !z-[99999]">
         <div className="w-full h-16 bg-[#171717] flex justify-between items-center lg:!hidden">
           <div className="flex items-center">
             <div className="w-16 h-16">

@@ -6,6 +6,7 @@ import {
 import "./../App.css";
 import _ from "lodash";
 import MusicCard from "../Components/MusicCard";
+import Poster from "../Components/Poster";
 
 const LastPlayed = () => {
   return (
@@ -24,21 +25,7 @@ const LastPlayed = () => {
         </div>
         <div className="grid grid-cols-2 lg:!grid-cols-3 w-full gap-2 md:!gap-3 px-2 py-1">
           {_.range(0, 3).map((id) => (
-            <button
-              className="col-span-1 bg-black h-20 rounded-lg lg:!rounded-none p-2 lg:!p-0 flex items-center sm:!h-24 md:!h-28 cursor-pointer sectionTitle"
-              key={id}
-            >
-              <img
-                src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb4e9a052f23cffd91e9838755/1/en/default"
-                className="w-2/5 h-full rounded-lg lg:!rounded-none"
-                alt=""
-              />
-              <div className="w-3/5 items-center justify-center p-2">
-                <div className="text-stone-300 text-sm text-center md:!text-base sectionTitleText">
-                  Black Home - DEP
-                </div>
-              </div>
-            </button>
+            <Poster id={id} col={1} />
           ))}
         </div>
       </div>
@@ -54,8 +41,8 @@ const LastPlayed = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-8 w-full gap-4 md:gap-5 px-2 py-1">
-          {_.range(0, 8).map((id) => (
+        <div className="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-9 w-full gap-4 md:gap-5 px-2 py-1">
+          {_.range(0, 9).map((id) => (
             <MusicCard id={id} />
           ))}
         </div>
@@ -72,8 +59,8 @@ const LastPlayed = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-8 w-full gap-4 md:gap-5 px-2 py-1">
-          {_.range(0, 8).map((id) => (
+        <div className="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-9 w-full gap-4 md:gap-5 px-2 py-1">
+          {_.range(0, 9).map((id) => (
             <MusicCard id={id} />
           ))}
         </div>

@@ -20,7 +20,7 @@ const MusicPlayerDesk = () => {
 
   return (
     <>
-      <div className="fixed bottom-16 lg:bottom-0 w-full h-20 bg-[#1F003E] grid-cols-12 hidden lg:!grid">
+      <div className="fixed bottom-16 lg:bottom-0 w-full h-20 bg-[#1F003E] grid-cols-12 hidden lg:!grid !z-[99999]">
         <div className="flex items-center p-2 col-span-3">
           <div className="w-16 h-16 rounded-xl overflow-hidden">
             <img
