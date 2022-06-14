@@ -29,7 +29,10 @@ const YourLiking = () => {
         </thead>
         <tbody>
           {_.range(1, 51).map((i) => (
-            <tr key={i} className="transition-colors hover:bg-black/40">
+            <tr
+              key={i}
+              className="transition-all duration-300 hover:shadow-[0_0_20px_black] hover:scale-[1.01]"
+            >
               <td className="flex items-center my-2 ml-2">
                 <div className="w-6 md:w-8">{i}</div>
                 <div className="w-10 h-10">

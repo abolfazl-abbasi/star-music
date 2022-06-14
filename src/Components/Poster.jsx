@@ -11,7 +11,7 @@ const Poster = ({ id, col }) => {
           alt=""
         />
         <div className="w-3/5 items-center justify-center p-2">
-          <div className="text-stone-300 text-sm text-center md:!text-base sectionTitleText">
+          <div className="text-stone-300 text-sm text-center md:!text-base lg:!text-xl sectionTitleText">
             Black Home - DEP
           </div>
         </div>
