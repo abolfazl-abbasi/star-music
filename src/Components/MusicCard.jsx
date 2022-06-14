@@ -19,10 +19,10 @@ const MusicCard = ({ id }) => {
           </div>
         </div>
         <div className="text-[10px] text-stone-100 pt-1 w-full md:mt-2 text-left">
-          <div className="whitespace-nowrap text-ellipsis overflow-hidden w-full">
+          <div className="whitespace-nowrap text-ellipsis overflow-hidden w-full cartMusicName">
             DO TA DEL ASHEGH
           </div>
-          <div className="text-stone-400 text-[10px]">
+          <div className="text-stone-400 text-[10px] cartSingerName">
             <span>BEHNAM BANI</span>
             <div className="my-1">
               <div className="flex items-center space-x-1 text-[10px] justify-end mx-1">

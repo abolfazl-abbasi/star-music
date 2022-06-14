@@ -214,6 +214,17 @@ code {
   @apply blur-sm;
 }
 
+.songCart:hover .cartSingerName {
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.songCart:hover .cartMusicName {
+  transition: 0.3s;
+  color: white;
+  text-shadow: -2px -1px rgb(255, 0, 0), 2px 1px rgb(0, 0, 255);
+}
+
 .songCart .cartPlay {
   transition: 0.3s;
   background-color: #0000003b;
