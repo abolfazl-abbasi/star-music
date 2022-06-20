@@ -73,7 +73,7 @@ const MainNav = ({ component }) => {
               <div className="w-full flex items-center relative pl-4 pr-3 lg:!p-0">
                 <input
                   type="search"
-                  className="relative lg:h-[54px] focus:border-2 focus:!bg-neutral-700 pb-1 w-full pl-4 xl:pl-6 h-11 rounded-xl hover:bg-stone-800/60 bg-stone-800 placeholder:text-xs md:placeholder placeholder:text-stone-300 dark:placeholder:text-stone-500 text-white"
+                  className="relative lg:!h-12 focus:border-2 focus:!bg-neutral-700 pb-1 w-full pl-4 xl:pl-6 h-11 rounded-xl hover:bg-stone-800/60 bg-stone-800 placeholder:text-xs md:placeholder placeholder:text-stone-300 dark:placeholder:text-stone-500 text-white"
                   placeholder="artists , songs , . . ."
                 />
                 <button className="rounded-xl flex items-center justify-center h-8 md:h-12 xl:h-16 px-3 xl:px-5 absolute right-3 lg:!-right-2">
@@ -98,16 +98,16 @@ const MainNav = ({ component }) => {
             component === "home" ? "" : "!hidden"
           }`}
         >
-          <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-12 hover:bg-stone-500 !bg-blue-800 text-white rounded-md flex items-center justify-center shadow-[0_0_12px_blue]">
+          <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 hover:bg-stone-500 !bg-blue-800 text-white rounded-md flex items-center justify-center shadow-[0_0_12px_blue]">
             Playlist
           </button>
-          <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-12 text-stone-300 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
+          <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 text-stone-300 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
             Artists
           </button>
-          <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-12 text-stone-300 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
+          <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 text-stone-300 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
             Podcasts
           </button>
-          <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 lg:!h-12 text-stone-300 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
+          <button className="w-1/5 lg:w-1/4 mx-2 h-8 sm:!h-10 text-stone-300 hover:bg-stone-500 bg-stone-600 rounded-md flex items-center justify-center">
             Albums
           </button>
         </div>

@@ -30,7 +30,7 @@ const LibraryPage = () => {
           {_.range(0, 3).map((id) => (
             <Poster id={id} col={3} />
           ))}
-          <button className="col-span-1 bg-black h-20 rounded-lg lg:!rounded-none p-2 lg:!p-0 flex items-center sm:!h-28 md:!h-40 cursor-pointer sectionTitle hover:!bg-purple-900">
+          <button className="col-span-1 bg-black h-20 rounded-lg lg:!rounded-none p-2 lg:!p-0 flex items-center sm:!h-28 md:!h-32 cursor-pointer sectionTitle hover:!bg-purple-900">
             <div className="w-2/5 lg:!w-full h-full rounded-lg lg:!rounded-none bg-purple-900 flex items-center justify-center">
               <HiPlus className="w-2/3 h-2/3" />
             </div>
@@ -57,7 +57,7 @@ const LibraryPage = () => {
         <div className="grid grid-cols-3 sm:grid-cols-4 md:!grid-cols-5 xl:!grid-cols-7 w-full gap-4 md:gap-5 px-2 py-1">
           {_.range(0, 7).map((id) => (
             <button
-              className="h-40 sm:!h-44 bg-[#050505] rounded-lg px-2 py-2 sm:!py-0 md:!h-56 xl:!h-68 hover:bg-[#0a0a0ad4] transition-all duration-300 cursor-pointer singerCart text-left lg:!text-center shadow-[0_0_12px_#0f0f0f]"
+              className="h-40 sm:!h-44 bg-[#050505] rounded-lg px-2 py-2 md:!p-4 md:!h-56 xl:!h-68 hover:bg-[#0a0a0ad4] transition-all duration-300 cursor-pointer singerCart text-left lg:!text-center shadow-[0_0_12px_#0f0f0f]"
               key={id}
             >
               <div className="w-full h-2/3 rounded-full overflow-hidden relative">
@@ -104,8 +104,8 @@ const LibraryPage = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-10 w-full gap-4 md:!gap-3 px-2 py-1">
-          {_.range(0, 10).map((id) => (
+        <div className="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-9 w-full gap-4 md:!gap-3 px-2 py-1">
+          {_.range(0, 9).map((id) => (
             <MusicCard id={id} />
           ))}
         </div>

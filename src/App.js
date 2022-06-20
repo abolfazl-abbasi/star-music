@@ -3,6 +3,7 @@ import MainLayout from "./Layouts/MainLayout";
 import HomePage from "./Pages/Home";
 import LastPlayed from "./Pages/LastPlayed";
 import LibraryPage from "./Pages/Library";
+import PostPage from "./Pages/PostPage";
 import SearchPage from "./Pages/SearchPage";
 import YourLiking from "./Pages/YourLiking";
 
@@ -32,6 +33,11 @@ function App() {
       <Route path={"/yourLiking"}>
         <MainLayout>
           <YourLiking />
+        </MainLayout>
+      </Route>
+      <Route path={"/post/:id"}>
+        <MainLayout>
+          <PostPage />
         </MainLayout>
       </Route>
     </>

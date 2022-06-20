@@ -5,7 +5,7 @@ import _ from "lodash";
 import MusicCard from "../Components/MusicCard";
 import Poster from "../Components/Poster";
 
-const HomePage = () => {
+const PostPage = () => {
   return (
     <>
       <div className="space-y-2">
@@ -68,4 +68,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default PostPage;

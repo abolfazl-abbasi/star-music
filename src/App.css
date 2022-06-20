@@ -222,7 +222,7 @@ code {
 .songCart:hover .cartMusicName {
   transition: 0.3s;
   color: white;
-  text-shadow: -2px -1px rgb(255, 0, 0), 2px 1px rgb(0, 0, 255);
+  text-shadow: 2px 1px rgb(255, 0, 0), -2px -1px rgb(0, 0, 255);
 }
 
 .songCart .cartPlay {
