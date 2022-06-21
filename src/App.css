@@ -115,7 +115,7 @@ code {
 }
 
 .categoryMusic:hover img {
-  filter: blur(8px);
+  /* filter: blur(8px); */
 }
 
 .categoryMusic:hover span {
@@ -211,7 +211,7 @@ code {
 
 .songCart:hover img {
   transition: all 0.3s;
-  @apply blur-sm;
+  /* @apply blur-sm; */
 }
 
 .songCart:hover .cartSingerName {

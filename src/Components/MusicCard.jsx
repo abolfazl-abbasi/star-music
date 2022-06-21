@@ -14,8 +14,8 @@ const MusicCard = ({ id }) => {
             src={require("./../assets/images/Rectangle 64 (1).jpg")}
             alt=""
           />
-          <div className="absolute w-full h-full flex items-center justify-center top-0 cartPlay">
-            <GoPlay className="w-10 h-10 text-green-600 cartSongPlay" />
+          <div className="absolute w-full h-full flex items-center justify-center top-0">
+            {/* <GoPlay className="w-10 h-10 text-green-600" /> */}
           </div>
         </div>
         <div className="text-[10px] text-stone-100 pt-1 w-full md:mt-2 text-left">
