@@ -1,4 +1,5 @@
 import { Route } from "react-router-dom";
+import MusicPlayerDesk from "./Components/MusicPlayerDesk";
 import MainLayout from "./Layouts/MainLayout";
 import HomePage from "./Pages/Home";
 import LastPlayed from "./Pages/LastPlayed";

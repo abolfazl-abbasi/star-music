@@ -12,7 +12,7 @@ const MainLayout = ({ children, component }) => {
     <>
       <div className="grid grid-cols-6">
         <NavbarDesk />
-        <div className="col-span-6 lg:col-span-5 mb-[140px] lg:mb-20 ">
+        <div className="col-span-6 lg:col-span-5 mb-[140px] lg:mb-20">
           {component === "search" ? (
             <SearchNav />
           ) : (

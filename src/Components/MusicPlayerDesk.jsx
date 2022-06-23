@@ -33,7 +33,7 @@ const MusicPlayerDesk = () => {
             <div className="flex items-center pb-2">
               Black Home - DEP
               <span className="pl-2">
-                <HiOutlineStar className="w-5 h-5  lg:!ml-1 hover:text-yellow-300" />
+                <HiOutlineStar className="w-5 h-5 lg:!ml-1 hover:text-yellow-300" />
               </span>
             </div>
             <div>MR . TEST</div>

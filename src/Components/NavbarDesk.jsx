@@ -42,11 +42,9 @@ const NavbarDesk = () => {
               className="w-28 h-8 rounded-full overflow-hidden bg-stone-600 p-1 flex items-center space-x-3 hover:bg-stone-500 accountsBtn"
               onClick={() => handleShowAccounts("open", 0)}
             >
-              <img
-                src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
-                alt=""
-                className="h-full rounded-full"
-              />
+              <div className="h-full rounded-full w-16 bg-green-400 text-center">
+                A
+              </div>
               <div className="text-ellipsis overflow-hidden w-4/5 text-xs text-stone-300">
                 ABOL
               </div>

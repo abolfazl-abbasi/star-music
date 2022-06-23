@@ -122,6 +122,7 @@ code {
   transform: rotate(-4deg);
   /* mix-blend-mode: ; */
   font: bold;
+  /* color: white; */
 }
 
 .artistInfo * {
@@ -223,7 +224,7 @@ code {
   transition: color 0.3s;
   color: white;
   /* text-shadow: 2px 1px rgb(255, 0, 0), -2px -1px rgb(0, 0, 255); */
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .songCart .cartPlay {
