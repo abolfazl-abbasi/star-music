@@ -1,181 +1,226 @@
-import React from "react";
-import {
-  HiChevronDown,
-  HiClock,
-  HiCog,
-  HiHeart,
-  HiHome,
-  HiLibrary,
-  HiPlus,
-  HiSearch,
-  HiStar,
-  // HiSearch,
-} from "react-icons/hi";
 import "./../App.css";
-import { Link, useLocation } from "react-router-dom";
-import AccountsBar from "../Components/AccountsBar";
+import { handleMenu } from "../Containers/handlers";
+import AccountsBtn from "./AccountsBtn";
 
 const NavbarMob = () => {
-  const loc = useLocation();
-  const handleMenu = (close) => {
-    const menuBg = document.getElementById("menuBackground");
-    const menu = document.getElementById("menu");
-
-    if (close === "close") {
-      menu.style.transition = "1s";
-      menu.style.right = "100%";
-      if (menu.style.right === "100%") {
-        menuBg.style.display = "none";
-      }
-      return;
-    }
-
-    menuBg.style.display = "grid";
-    menu.style.transition = "1s";
-    menu.style.right = "0%";
-  };
-
-  const handleShowAccounts = (e, x) => {
-    const accounts = document.getElementsByClassName("accounts")[x];
-    const accountsBg = document.getElementsByClassName("accountsBg")[x];
-
-    if (e === "open") {
-      accounts.style.display = "block ";
-      accountsBg.style.display = "block ";
-    }
-
-    if (e === "close") {
-      accounts.style.display = "none ";
-      accountsBg.style.display = "none ";
-    }
-  };
+  const loc = window.location;
 
   return (
     <>
       <div
-        className="w-screen h-screen bg-black/70 fixed top-0 hidden grid-cols-12"
+        class="w-screen h-screen bg-black/70 fixed top-0 hidden grid-cols-12"
         id="menuBackground"
       >
         <div
-          className="col-span-7 sm:!col-span-4 md:!col-span-3 h-full bg-stone-900 p-2 relative right-full transition-all"
+          class="col-span-7 sm:!col-span-4 md:!col-span-3 h-full bg-stone-900 p-2 relative right-full transition-all"
           id="menu"
         >
-          <div className="mt-3 mb-1 ml-2 relative">
-            <div
-              className="w-28 h-8 rounded-full overflow-hidden bg-stone-600 p-1 flex items-center space-x-3 hover:bg-stone-500 accountsBtn"
-              onClick={() => handleShowAccounts("open", 2)}
-            >
-              <img
-                src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
-                alt=""
-                className="h-full rounded-full"
-              />
-              <div className="text-ellipsis overflow-hidden w-4/5 text-xs text-stone-300">
-                ABOL
-              </div>
-              <div className="w-1/5">
-                <HiChevronDown className="w-5 h-5 mt-[2px] text-stone-200" />
-              </div>
-            </div>
-            <AccountsBar index={2} top={"top-10"} />
-            <div
-              className="absolute w-screen h-screen top-[-16px] -left-8 z-40 accountsBg hidden"
-              onClick={() => handleShowAccounts("close", 2)}
-            ></div>
-          </div>
+          <AccountsBtn index={2} top={"top-10"} />
           <div>
-            <Link
-              to={"/"}
-              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
+            <a
+              href={"/"}
+              class={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                 loc.pathname === "/" ? "!text-white" : ""
               }`}
             >
-              <HiHome className="w-5 h-5 ml-2 mr-2" />
-              <div className="text">Home</div>
-            </Link>
-            <Link
-              to={"/search"}
-              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 20 20"
+                class="w-5 h-5 ml-2 mr-2"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+              </svg>
+              <div class="text">Home</div>
+            </a>
+            <a
+              href={"/search"}
+              class={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                 loc.pathname === "/search" ? "!text-white" : ""
               }`}
             >
-              <HiSearch className="w-5 h-5 ml-2 mr-2" />
-              <div className="text">Search</div>
-            </Link>
-            <Link
-              to={"/library"}
-              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 20 20"
+                class="w-5 h-5 ml-2 mr-2"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <div class="text">Search</div>
+            </a>
+            <a
+              href={"/library"}
+              class={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                 loc.pathname === "/library" ? "!text-white" : ""
               }`}
             >
-              <HiLibrary className="w-5 h-5 ml-2 mr-2" />
-              <div className="text">Library</div>
-            </Link>
-            <Link
-              to={"/lastPlayed"}
-              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 20 20"
+                class="w-5 h-5 ml-2 mr-2"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.496 2.132a1 1 0 00-.992 0l-7 4A1 1 0 003 8v7a1 1 0 100 2h14a1 1 0 100-2V8a1 1 0 00.496-1.868l-7-4zM6 9a1 1 0 00-1 1v3a1 1 0 102 0v-3a1 1 0 00-1-1zm3 1a1 1 0 012 0v3a1 1 0 11-2 0v-3zm5-1a1 1 0 00-1 1v3a1 1 0 102 0v-3a1 1 0 00-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <div class="text">Library</div>
+            </a>
+            <a
+              href={"/lastPlayed"}
+              class={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                 loc.pathname === "/lastPlayed" ? "!text-white" : ""
               }`}
             >
-              <HiClock className="w-5 h-5 ml-2 mr-2" />
-              <div className="text">Last Played</div>
-            </Link>
-            <Link
-              to={"/setting"}
-              className={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 20 20"
+                class="w-5 h-5 ml-2 mr-2"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <div class="text">Last Played</div>
+            </a>
+            <a
+              href={"/setting"}
+              class={`flex items-center px-1 py-2 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                 loc.pathname === "/setting" ? "!text-white" : ""
               }`}
             >
-              <HiCog className="w-5 h-5 ml-2 mr-2" />
-              <div className="text">Setting</div>
-            </Link>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 20 20"
+                class="w-5 h-5 ml-2 mr-2"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <div class="text">Setting</div>
+            </a>
           </div>
-          <hr className="text-stone-300 m-4" />
+          <hr class="text-stone-300 m-4" />
           <div>
-            <div className="">
-              <div className="px-2">
-                <div className="text-xl text-stone-300">Playlist</div>
+            <div class="">
+              <div class="px-2">
+                <div class="text-xl text-stone-300">Playlist</div>
               </div>
             </div>
             <div>
-              <Link
-                to={"/yourMarks"}
-                className={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer mt-1 text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
+              <a
+                href={"/yourMarks"}
+                class={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer mt-1 text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                   loc.pathname === "/yourMarks" ? "!text-white" : ""
                 }`}
               >
-                <div className="w-8 h-8 rounded-xl bg-purple-800 text-white ml-2 mr-3 flex items-center justify-center">
-                  <HiStar className="w-5 h-5" />
+                <div class="w-8 h-8 rounded-xl bg-purple-800 text-white ml-2 mr-3 flex items-center justify-center">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    class="w-5 h-5"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                  </svg>
                 </div>
                 <div>your marks</div>
-              </Link>
-              <Link
-                to={"/yourLiking"}
-                className={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
+              </a>
+              <a
+                href={"/yourLiking"}
+                class={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                   loc.pathname === "/yourLiking" ? "!text-white" : ""
                 }`}
               >
-                <div className="w-8 h-8 rounded-xl bg-red-800 text-white ml-2 mr-3 flex items-center justify-center">
-                  <HiHeart className="w-5 h-5" />
+                <div class="w-8 h-8 rounded-xl bg-red-800 text-white ml-2 mr-3 flex items-center justify-center">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    class="w-5 h-5"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
                 </div>
                 <div>your liking</div>
-              </Link>
-              <Link
-                to={"/addPlaylist"}
-                className={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
+              </a>
+              <a
+                href={"/addPlaylist"}
+                class={`flex items-center py-2 px-1 rounded-2xl my-1 cursor-pointer text-stone-500 hover:bg-stone-700 hover:text-stone-100 ${
                   loc.pathname === "/addPlaylist" ? "!text-white" : ""
                 }`}
               >
-                <div className="w-8 h-8 rounded-xl bg-cyan-800 text-white ml-2 mr-3 flex items-center justify-center">
-                  <HiPlus className="w-5 h-5" />
+                <div class="w-8 h-8 rounded-xl bg-cyan-800 text-white ml-2 mr-3 flex items-center justify-center">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 20 20"
+                    class="w-5 h-5"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
                 </div>
                 <div>add playlist</div>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
         <div
-          className="col-span-5 sm:!col-span-8 md:!col-span-9 h-full"
+          class="col-span-5 sm:!col-span-8 md:!col-span-9 h-full"
           onClick={() => handleMenu("close")}
         ></div>
       </div>

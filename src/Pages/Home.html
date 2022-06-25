@@ -1,15 +1,22 @@
-import React from "react";
-import "./../App.css";
-
-const LastPlayed = () => {
-  return (
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../App.css" />
+    <title>Document</title>
+  </head>
+  <body>
     <div class="space-y-2">
       <div>
         <div>
           <div class="flex items-center justify-between p-2">
-            <h2 class="text-stone-400 text-xl">Last Played Albums</h2>
-            <div class="flex items-center text-stone-500 hover:text-blue-700 hover:translate-x-1 transition-all cursor-pointer">
-              <button>show more</button>{" "}
+            <h2 class="text-stone-400 text-xl">Recently Played</h2>
+            <div
+              class="flex items-center text-stone-500 hover:text-blue-700 hover:translate-x-1 transition-all cursor-pointer"
+            >
+              <button>show more</button>
               <span class="pt-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -29,11 +36,12 @@ const LastPlayed = () => {
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-2 lg:!grid-cols-3 w-full gap-2 md:!gap-3 px-2 py-1">
-          {/* Poster */}
-          {/* {_.range(0, 3).map((id) => ( */}
+        <div
+          class="grid grid-cols-2 lg:!grid-cols-3 w-full gap-2 md:!gap-3 px-2 py-1"
+        >
+          <!-- {/* Poster */} {/* {_.range(0, 3).map((id) => ( */} -->
           <button
-            class={`col-span-1 lg:!col-span-1 bg-black h-20 rounded-lg lg:!rounded-none p-2 lg:!p-0 flex items-center sm:!h-28 md:!h-32 cursor-pointer sectionTitle`}
+            class="col-span-1 lg:!col-span-1 bg-black h-20 rounded-lg lg:!rounded-none p-2 lg:!p-0 flex items-center sm:!h-28 md:!h-32 cursor-pointer sectionTitle"
           >
             <img
               src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb4e9a052f23cffd91e9838755/1/en/default"
@@ -41,20 +49,23 @@ const LastPlayed = () => {
               alt=""
             />
             <div class="w-3/5 items-center justify-center p-2">
-              <div class="text-stone-300 text-sm text-center md:!text-base lg:!text-lg sectionTitleText">
+              <div
+                class="text-stone-300 text-sm text-center md:!text-base lg:!text-lg sectionTitleText"
+              >
                 Black Home - DEP
               </div>
             </div>
           </button>
-          {/* ))} */}
-          {/* Poster */}
+          <!-- {/* ))} */} {/* Poster */} -->
         </div>
       </div>
       <div>
         <div>
           <div class="flex items-center justify-between p-2">
-            <h2 class="text-stone-400 text-xl">Last Played All</h2>
-            <div class="flex items-center text-stone-500 hover:text-blue-700 hover:translate-x-1 transition-all cursor-pointer">
+            <h2 class="text-stone-400 text-xl">Recently Played</h2>
+            <div
+              class="flex items-center text-stone-500 hover:text-blue-700 hover:translate-x-1 transition-all cursor-pointer"
+            >
               <button>show more</button>{" "}
               <span class="pt-1">
                 <svg
@@ -75,26 +86,39 @@ const LastPlayed = () => {
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-9 w-full gap-4 md:gap-3 px-2 py-1">
-          {/* Music Card */}
-          {/* {_.range(0, 9).map((id) => ( */}
-          <button class="h-40 sm:!h-48 bg-[#181818] rounded-lg px-2 pt-2 pb-1 md:h-56 hover:bg-[#272727] transition-all duration-300 cursor-pointer songCart text-left lg:!text-center hover:scale-105">
-            <div class="w-full h-3/5 rounded-lg overflow-hidden shadow-[0_0_12px_#000000] relative">
+        <div
+          class="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-9 w-full gap-4 md:gap-3 px-2 py-1"
+        >
+          <!-- {/* Music Card */} {/* {_.range(0, 9).map((id) => ( */} -->
+          <button
+            class="h-40 sm:!h-48 bg-[#181818] rounded-lg px-2 pt-2 pb-1 md:h-56 hover:bg-[#272727] transition-all duration-300 cursor-pointer songCart text-left lg:!text-center hover:scale-105"
+          >
+            <div
+              class="w-full h-3/5 rounded-lg overflow-hidden shadow-[0_0_12px_#000000] relative"
+            >
               <img
                 class="w-full h-full"
-                src={require("./../assets/images/Rectangle 64 (1).jpg")}
+                src="./../assets/images/Rectangle 64 (1).jpg"
                 alt=""
               />
-              <div class="absolute w-full h-full flex items-center justify-center top-0"></div>
+              <div
+                class="absolute w-full h-full flex items-center justify-center top-0"
+              ></div>
             </div>
-            <div class="text-[10px] text-stone-100 pt-1 w-full md:mt-2 text-left">
-              <div class="whitespace-nowrap text-ellipsis overflow-hidden w-full cartMusicName">
+            <div
+              class="text-[10px] text-stone-100 pt-1 w-full md:mt-2 text-left"
+            >
+              <div
+                class="whitespace-nowrap text-ellipsis overflow-hidden w-full cartMusicName"
+              >
                 DO TA DEL ASHEGH
               </div>
               <div class="text-stone-400 text-[10px] cartSingerName">
                 <span>BEHNAM BANI</span>
                 <div class="my-1">
-                  <div class="flex items-center space-x-1 text-[10px] justify-end mx-1">
+                  <div
+                    class="flex items-center space-x-1 text-[10px] justify-end mx-1"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-3 w-3"
@@ -114,15 +138,16 @@ const LastPlayed = () => {
               </div>
             </div>
           </button>
-          {/* ))} */}
-          {/* Music Card */}
+          <!-- {/* ))} */} {/* Music Card */} -->
         </div>
       </div>
       <div>
         <div>
           <div class="flex items-center justify-between p-2">
-            <h2 class="text-stone-400 text-xl">Last Played All</h2>
-            <div class="flex items-center text-stone-500 hover:text-blue-700 hover:translate-x-1 transition-all cursor-pointer">
+            <h2 class="text-stone-400 text-xl">Recently Played</h2>
+            <div
+              class="flex items-center text-stone-500 hover:text-blue-700 hover:translate-x-1 transition-all cursor-pointer"
+            >
               <button>show more</button>{" "}
               <span class="pt-1">
                 <svg
@@ -143,26 +168,39 @@ const LastPlayed = () => {
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-9 w-full gap-4 md:gap-3 px-2 py-1">
-          {/* Music Card */}
-          {/* {_.range(0, 9).map((id) => ( */}
-          <button class="h-40 sm:!h-48 bg-[#181818] rounded-lg px-2 pt-2 pb-1 md:h-56 hover:bg-[#272727] transition-all duration-300 cursor-pointer songCart text-left lg:!text-center hover:scale-105">
-            <div class="w-full h-3/5 rounded-lg overflow-hidden shadow-[0_0_12px_#000000] relative">
+        <div
+          class="grid grid-cols-3 sm:grid-cols-5 md:!grid-cols-6 xl:!grid-cols-9 w-full gap-4 md:gap-3 px-2 py-1"
+        >
+          <!-- {/* Music Card */} {/* {_.range(0, 9).map((id) => ( */} -->
+          <button
+            class="h-40 sm:!h-48 bg-[#181818] rounded-lg px-2 pt-2 pb-1 md:h-56 hover:bg-[#272727] transition-all duration-300 cursor-pointer songCart text-left lg:!text-center hover:scale-105"
+          >
+            <div
+              class="w-full h-3/5 rounded-lg overflow-hidden shadow-[0_0_12px_#000000] relative"
+            >
               <img
                 class="w-full h-full"
-                src={require("./../assets/images/Rectangle 64 (1).jpg")}
+                src="./../assets/images/Rectangle 64 (1).jpg"
                 alt=""
               />
-              <div class="absolute w-full h-full flex items-center justify-center top-0"></div>
+              <div
+                class="absolute w-full h-full flex items-center justify-center top-0"
+              ></div>
             </div>
-            <div class="text-[10px] text-stone-100 pt-1 w-full md:mt-2 text-left">
-              <div class="whitespace-nowrap text-ellipsis overflow-hidden w-full cartMusicName">
+            <div
+              class="text-[10px] text-stone-100 pt-1 w-full md:mt-2 text-left"
+            >
+              <div
+                class="whitespace-nowrap text-ellipsis overflow-hidden w-full cartMusicName"
+              >
                 DO TA DEL ASHEGH
               </div>
               <div class="text-stone-400 text-[10px] cartSingerName">
                 <span>BEHNAM BANI</span>
                 <div class="my-1">
-                  <div class="flex items-center space-x-1 text-[10px] justify-end mx-1">
+                  <div
+                    class="flex items-center space-x-1 text-[10px] justify-end mx-1"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-3 w-3"
@@ -182,12 +220,9 @@ const LastPlayed = () => {
               </div>
             </div>
           </button>
-          {/* ))} */}
-          {/* Music Card */}
+          <!-- {/* ))} */} {/* Music Card */} -->
         </div>
       </div>
     </div>
-  );
-};
-
-export default LastPlayed;
+  </body>
+</html>
